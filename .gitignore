@@ -1,0 +1,12 @@
+# ferramentas de desenvolvimento
+.idea/
+nbproject/
+.vscode/
+
+# configurações do projeto
+config/config.ini
+
+# bibliotecas do framework e de terceiros
+vendor/
+
+# demais configurações
