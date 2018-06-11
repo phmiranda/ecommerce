@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 04325469109
- * Date: 28/05/2018
- * Time: 14:39
- */
+<?php require_once('front-header.php'); ?>
+<div class="container">
+    <div class="row">
+        <h3 class="text-center text-success"> Bem Vindo ao Sistema de Controle de Estoque da Alura. </h3>
+    </div>
+</div>
+<?php require_once('front-footer.php'); ?>
