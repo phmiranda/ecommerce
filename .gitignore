@@ -6,7 +6,10 @@ nbproject/
 # configurações do projeto
 config/config.ini
 
-# bibliotecas do framework e de terceiros
+# bibliotecas de terceiros
 vendor/
+
+# scripts gerados para o banco de dados
+storage/schemas/*
 
 # demais configurações
