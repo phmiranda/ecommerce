@@ -24,7 +24,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"> Categorias </a></li>
                     <li><a href="#"> Produtos </a></li>
-                    <li><a href="usuarios.php"> Usuários </a></li>
+                    <li><a href="#"> Usuários </a></li>
                 </ul>
             </div>
         </div>
