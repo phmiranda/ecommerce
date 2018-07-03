@@ -18,12 +18,12 @@ class Categoria {
     }
 
     // comentários
-    public function excluir(){
-        
-    }
-    
-    // comentários
     public function editar(){
+
+    }
+
+    // comentários
+    public function excluir(){
         
     }
     

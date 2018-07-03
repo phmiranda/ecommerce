@@ -7,5 +7,28 @@
  */
 
 class Usuario {
+    // comentários
+    public function index(){
 
+    }
+
+    // comentários
+    public function salvar(){
+
+    }
+
+    // comentários
+    public function editar(){
+
+    }
+
+    // comentários
+    public function excluir(){
+
+    }
+
+    // comentários
+    public function pesquisar(){
+
+    }
 }
