@@ -1,7 +1,13 @@
 {
-  "name": "Alura - Sistemas de Comércio Eletrônico",
-  "version": "0.0.1",
+  "name": "Sistemas de Comércio Eletrônico",
+  "version": "1.0.0",
   "dependencies": {
 
+  },
+  "require": {
+    "almasaeed2010/adminlte": "~2.4",
+    "phpunit/phpunit": "6.4"
+  },
+  "require-dev": {
   }
 }
