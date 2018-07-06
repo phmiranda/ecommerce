@@ -1,7 +1,3 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 04325469109
- * Date: 29/06/2018
- * Time: 15:16
- */
+// comentários
+echo "<h1>Listagem de Categorias</h1>";

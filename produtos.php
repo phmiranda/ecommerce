@@ -1,4 +1,4 @@
 <?php
-
-echo "página de inclusção de produtos.";
+// comentários
+echo "<h1>Listagem de Produtos</h1>";
 

@@ -5,6 +5,7 @@
     <meta>
     <title> Alura </title>
     <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/">
     <link rel="stylesheet" href="public/css/assets.css">
 </head>
 <body>
