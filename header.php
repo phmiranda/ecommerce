@@ -5,7 +5,6 @@
     <meta>
     <title> Alura </title>
     <link rel="stylesheet" href="public/css/bootstrap.css">
-    <link rel="stylesheet" href="public/css/">
     <link rel="stylesheet" href="public/css/assets.css">
 </head>
 <body>
@@ -23,9 +22,9 @@
             </div>
             <div id="menu-responsive" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"> Categorias </a></li>
-                    <li><a href="#"> Produtos </a></li>
-                    <li><a href="#"> Usuários </a></li>
+                    <li><a href="categorias.php"> Categorias </a></li>
+                    <li><a href="produtos.php"> Produtos </a></li>
+                    <li><a href="usuarios.php"> Usuários </a></li>
                 </ul>
             </div>
         </div>

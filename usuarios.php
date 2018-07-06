@@ -1,3 +1,8 @@
-<?php
-// comentários
-echo "<h1>Listagem de Usuários</h1>";
+<?php require_once('header.php'); ?>
+<div class="container">
+    <div class="row">
+        <h3> Listagem de Usuários </h3>
+        <hr>
+    </div>
+</div>
+<?php require_once('footer.php'); ?>
