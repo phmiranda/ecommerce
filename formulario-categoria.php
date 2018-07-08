@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <form method="post" action="adiciona-produto.php">
+                <form method="post" action="adiciona-categoria.php">
                     <h3> Cadastrar Categoria </h3>
                     <hr>
                     <div class="form-group">
@@ -11,7 +11,7 @@
                     </div>
                     <div class="form-group">
                         <label for="preco"> Descricao: </label>
-                        <input class="form-control" type="text" name="preco">
+                        <textarea class="form-control" name="preco"></textarea>
                     </div>
                     <button class="btn btn-success btn-block" type="submit"> Cadastrar </button>
                 </form>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <form method="post" action="adiciona-produto.php">
+                <form method="post" action="adiciona-usuario.php">
                     <h3> Cadastrar Usuário </h3>
                     <hr>
                     <div class="form-group">
@@ -27,6 +27,15 @@
                             <option value="1"> Masculino </option>
                             <option value="2"> Feminino </option>
                             <option value="3"> Outros </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="perfil"> Perfil de Acesso: </label>
+                        <select class="form-control" name="perfil_id">
+                            <option value="1"> Administrador </option>
+                            <option value="2"> Fornecedor </option>
+                            <option value="3"> Usuário </option>
                         </select>
                     </div>
 
