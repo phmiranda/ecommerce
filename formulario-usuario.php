@@ -11,35 +11,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="cpf"> CPF: </label>
-                        <input class="form-control" type="text" name="preco">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="data_nascimento"> Data de Nascimento: </label>
-                        <input class="form-control" type="date" name="data_nascimento">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="sexo"> Sexo: </label>
-                        <select class="form-control" name="sexo">
-                            <option value="0" selected> Selecione uma opção </option>
-                            <option value="1"> Masculino </option>
-                            <option value="2"> Feminino </option>
-                            <option value="3"> Outros </option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="perfil"> Perfil de Acesso: </label>
-                        <select class="form-control" name="perfil_id">
-                            <option value="1"> Administrador </option>
-                            <option value="2"> Fornecedor </option>
-                            <option value="3"> Usuário </option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
                         <label for="email"> E-Mail: </label>
                         <input class="form-control" type="email" name="email">
                     </div>

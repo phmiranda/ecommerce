@@ -11,16 +11,21 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="preco"> Preço: </label>
+                    <input class="form-control" type="text" name="preco">
+                </div>
+
+                <div class="form-group">
                     <label for="categoria"> Categoria: </label>
                     <select class="form-control" name="categoria_id">
                         <option value="0" selected> Selecione uma opção </option>
-                        <option value="1"> Categoria 01 </option>
+                        <option value="1"> Administrativo </option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="preco"> Preço: </label>
-                    <input class="form-control" type="text" name="preco">
+                    <label for="descricao"> Descrição: </label>
+                    <textarea class="form-control" name="descricao"></textarea>
                 </div>
 
                 <button class="btn btn-success btn-block" type="submit"> Cadastrar </button>
