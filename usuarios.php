@@ -7,9 +7,9 @@
 
         <div class="col-md-6">
             <div class="input-group h2">
-                <input id="search" class="form-control" type="text" name="data[search]" placeholder="Pesquisar Itens">
+                <input name="data[search]" class="form-control" id="search" type="text" placeholder="Digite">
                 <span class="input-group-btn">
-                <button class="btn btn-default" type="submit">
+                <button class="btn btn-primary" type="submit">
                     <span class="glyphicon glyphicon-search"></span>
                 </button>
             </span>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="col-md-3">
-            <a href="" class="btn btn-success pull-right h2"> Cadastrar </a>
+            <a href="formulario-usuario.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
         </div>
     </div>
 
