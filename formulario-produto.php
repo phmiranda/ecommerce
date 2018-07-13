@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-1">
             <form method="post" action="adiciona-produto.php">
                 <h3> Cadastrar Produto </h3>
                 <hr>
@@ -12,7 +12,7 @@
 
                 <div class="form-group">
                     <label for="preco"> Preço: </label>
-                    <input class="form-control" type="text" name="preco">
+                    <input class="form-control" type="number" name="preco">
                 </div>
 
                 <div class="form-group">

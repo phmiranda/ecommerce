@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <form method="post" action="adiciona-usuario.php">
                     <h3> Cadastrar Usuário </h3>
                     <hr>
