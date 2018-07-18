@@ -35,17 +35,18 @@
                 </tr>
                 </thead>
 
-                <tbody>
+                <?php foreach($categorias as $categoria):?>
                 <tr class="text-center">
-                    <td> 001 </td>
-                    <td> Administrativo </td>
-                    <td> Ativo </td>
+                    <td> <?php echo $categoria['id_categoria'];?> </td>
+                    <td> <?php echo $categoria['nome'];?> </td>
+                    <td> <?php echo $categoria['situacao'];?> </td>
                     <td class="actions">
                         <a class="btn btn-warning btn-xs" href="#"> Editar </a>
                         <a class="btn btn-info btn-xs" href="#"> Ver </a>
                         <a class="btn btn-danger btn-xs"  href="#"> Excluir </a>
                     </td>
                 </tr>
+                <?php endforeach;?>
                 </tbody>
             </table>
 
