@@ -1,5 +1,5 @@
 <?php require_once('header.php'); ?>
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-md-3">
             <h2> Usuários </h2>
