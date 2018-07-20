@@ -2,6 +2,9 @@
 // inclui o cabeçalho da página no arquivo.
 require_once('header.php');
 
+// configuração de conexão com o banco.
+require_once('config/conecta.php');
+
 // função de inserção de dados.
 function salvar($conn, $nome, $situacao, $descricao){
     $query = "INSERT INTO categorias(nome, situacao, descricao) VALUES('{$nome}','{$situacao}','{$descricao}')";
@@ -12,9 +15,6 @@ function salvar($conn, $nome, $situacao, $descricao){
 $nome = $_POST['nome'];
 $situacao = $_POST['situacao'];
 $descricao = $_POST['descricao'];
-
-// script de conexão com o banco de dados e inserção dos dados capturados no formulário.
-$conn = mysqli_connect('localhost','root','root', 'db_ecommerce');
 
 // verifica se foi inserido ou não os dados capturados no formulário.
 if (salvar($conn, $nome, $situacao, $descricao)){
