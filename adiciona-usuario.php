@@ -1,15 +1,8 @@
 <?php
-// inclui o cabeçalho da página no arquivo.
+// comentários
 require_once('header.php');
-
-// configuração de conexão com o banco.
-require_once('config/conecta.php');
-
-// função de inserção de dados.
-function salvar($conn, $nome, $email, $senha){
-    $query = "INSERT INTO usuarios(nome, email, senha) VALUES('{$nome}','{$email}','{$senha}')";
-    return mysqli_query($conn, $query);
-}
+require_once('conecta.php');
+require_once('class-usuario.php');
 
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];

@@ -1,15 +1,8 @@
 <?php
-// inclui o cabeçalho da página no arquivo.
+// comentários
 require_once('header.php');
-
-// configuração de conexão com o banco.
-require_once('config/conecta.php');
-
-// função de inserção de dados.
-function salvar($conn, $nome, $situacao, $descricao){
-    $query = "INSERT INTO categorias(nome, situacao, descricao) VALUES('{$nome}','{$situacao}','{$descricao}')";
-    return mysqli_query($conn, $query);
-}
+require_once('conecta.php');
+require_once('class-categoria.php');
 
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];

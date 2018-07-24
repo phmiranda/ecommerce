@@ -1,15 +1,10 @@
 <?php
-// inclui o cabeçalho da página no arquivo.
+// comentários
 require_once('header.php');
+require_once('conecta.php');
+require_once('class-produto.php');
 
-// configuração de conexão com o banco.
-require_once('config/conecta.php');
 
-// função de inserção de dados.
-function salvar($conn, $nome, $preco, $descricao, $categoria_id){
-    $query = "INSERT INTO produtos(nome, preco, descricao, categoria_id) VALUES('{$nome}','{$preco}','{$descricao}','{$categoria_id}')";
-    return mysqli_query($conn, $query);
-}
 
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];

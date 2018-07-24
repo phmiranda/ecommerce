@@ -7,4 +7,4 @@ $username = 'root';
 $password = 'root';
 
 // script de conexão com o banco de dados.
-$conn = mysqli_connect($localhost,$username,$password, $database) OR die('Error:'. mysqli_error($conn));
+$conn = mysqli_connect($localhost,$username,$password, $database);

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65bad09df82eba1b241be7b380408275",
+    "content-hash": "aaf256ef970c49606a982d74c5ba003e",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1623,16 +1623,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.1.2",
+            "version": "v3.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "1f46337a89ed21c94a7c37bc0c0e14a71fef7d97"
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/1f46337a89ed21c94a7c37bc0c0e14a71fef7d97",
-                "reference": "1f46337a89ed21c94a7c37bc0c0e14a71fef7d97",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
                 "shasum": ""
             },
             "replace": {
@@ -1659,18 +1659,18 @@
                 }
             ],
             "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "https://getbootstrap.com/",
+            "homepage": "http://getbootstrap.com",
             "keywords": [
                 "JS",
                 "css",
                 "framework",
                 "front-end",
+                "less",
                 "mobile-first",
                 "responsive",
-                "sass",
                 "web"
             ],
-            "time": "2018-07-12T16:27:14+00:00"
+            "time": "2016-07-25T15:51:55+00:00"
         },
         {
             "name": "webmozart/assert",
