@@ -2,7 +2,7 @@
 // comentários
 require_once('header.php');
 require_once('conecta.php');
-require_once('class-usuario.php');
+require_once('banco-usuario.php');
 
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];

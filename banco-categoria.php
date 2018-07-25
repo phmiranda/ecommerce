@@ -1,10 +1,10 @@
 <?php
 
-
-// comentários
+// função de listagem de registros.
 function index($conn){
     $categorias = array();
-    $resultado = mysqli_query($conn, "SELECT * FROM categorias");
+    $query = "SELECT * FROM categorias";
+    $resultado = mysqli_query($conn, $query);
     while ($categoria = mysqli_fetch_assoc($resultado)){
         array_push($categorias, $categoria);
     }

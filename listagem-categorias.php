@@ -1,9 +1,12 @@
 <?php
-// comentários
+// arquivo necessário para renderização do menu superior.
 require_once('header.php');
-require_once('conecta.php');
-require_once('class-categoria.php');
 
+// arquivo com a configuração do banco de dados.
+require_once('conecta.php');
+
+// arquivo com as funções de persistências na base de dados.
+require_once('banco-categoria.php');
 ?>
     <div class="container">
         <div class="row">
@@ -32,11 +35,9 @@ require_once('class-categoria.php');
         <div class="row">
             <div class="table-responsive col-md-12">
                 <?php
-                // verifica a remoção
+                // verifica a remoção do registro na listagem.
                 if(array_key_exists("removido", $_GET) && $_GET['removido']=='true'){
                     echo "<p class='alert-success text-center'> A categoria foi excluída com sucesso </p>";
-                }else{
-                    echo "<p class='alert-danger text-center'> A categoria não foi excluída com sucesso </p>";
                 }
                 ?>
                 <table class="table table-striped" cellspacing="0" cellpadding="0">
@@ -49,6 +50,7 @@ require_once('class-categoria.php');
                     </tr>
                     </thead>
 
+                    <tbody>
                     <?php
                     // chama a função para exibir os registros.
                     $categorias = index($conn);
@@ -57,8 +59,8 @@ require_once('class-categoria.php');
                         <tr class="text-center">
                             <td> <?php echo $categoria['id_categoria'];?> </td>
                             <td> <?php echo $categoria['nome'];?> </td>
-                            <td> <?php echo $categoria['situacao'];?> </td>
-                            <td class="actions">
+                            <td> <?php echo $categoria['situacao']?> </td>
+                            <td>
                                 <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
                                 <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a class="btn btn-danger btn-xs"  href="remove-categoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-trash"></a>

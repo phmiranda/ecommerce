@@ -1,12 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Pedro
- * Date: 24/07/2018
- * Time: 00:49
- */
 
-class CategoriaService
-{
+// comentários
+class CategoriaService {
+    // comentários
+    public function validarSituacao(){
+        if($situacao = 1){
 
+        }elseif($situacao = 2){
+
+        }
+    }
 }
