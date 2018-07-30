@@ -5,6 +5,7 @@ nbproject/
 
 # configurações do projeto
 config/config.ini
+container.dockerfile
 
 # bibliotecas de terceiros
 vendor/
