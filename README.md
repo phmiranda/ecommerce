@@ -1,1 +1,7 @@
-# Alura - Sistema de Comércio Eletrônico
+# Sistema de Comércio Eletrônico da Alura
+
+## Introdução
+
+## Configuração
+
+## Releases
