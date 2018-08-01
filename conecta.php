@@ -2,7 +2,7 @@
 
 // variáveis de conexão com a base de dados
 $server = 'localhost';
-$database = 'db_ecommerce';
+$database = 'db_ecommerce_alura';
 $username = 'root';
 $password = 'root';
 
