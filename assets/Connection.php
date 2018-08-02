@@ -1,6 +1,6 @@
 <?php
 // comentários
-class Conexao {
+class Connection {
     // comentários
     public function conectar(){
         // faz a leitura do .ini com as configurações do banco de dados
