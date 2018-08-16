@@ -4,22 +4,19 @@ FROM php:7.1-apache
 # mantenedor da imagem.
 MAINTAINER Pedro <pehhagah.1607@gmail.com>
 
-#comentários
-ENV APACHE_DOCUMENT_ROOT=/ecommerce/
+# variáveis de ambiente e parâmetros.
+ENV APACHE_HTTP=80
+ENV APACHE_HTTPS=443
 
-#comentários
+# movimentação dos arquivos necessários do container e repositório.
+#COPY config/php.ini /usr/local/etc/php/
 COPY . /var/www/html/
 
-# instalação das extensões necessárias no ambiente php.
-RUN apt-get install php7.1-gd
-RUN apt-get install php7.1-zip
-RUN apt-get install php7.1-xml
-RUN apt-get install php7.1-json
-RUN apt-get install php7.1-json
-RUN apt-get install php7.1-mysql
-RUN apt-get install php7.1-pgsql
-RUN apt-get install php7.1-sqlite
-RUN apt-get install php7.1-odbc
+# execução de comandos para instalação de pacotes.
+RUN docker-php-ext-configure mysqli
+RUN docker-php-ext-install mysqli
 
-#comentários
-EXPOSE 80
+# exposição da porta de comunicação do container.
+EXPOSE $APACHE_HTTP
+EXPOSE $APACHE_HTTPS
+
