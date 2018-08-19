@@ -1,22 +1,24 @@
-# imagem base para criação dos containers.
-FROM php:7.1-apache
+# comentários.
+FROM centos:7
 
-# mantenedor da imagem.
+# comentários.
 MAINTAINER Pedro <pehhagah.1607@gmail.com>
 
-# variáveis de ambiente e parâmetros.
-ENV APACHE_HTTP=80
-ENV APACHE_HTTPS=443
+# comentários.
+RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RUN yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+RUN yum -y install php71
 
-# movimentação dos arquivos necessários do container e repositório.
-#COPY config/php.ini /usr/local/etc/php/
-COPY . /var/www/html/
+# comentários.
+RUN mkdir -p /var/www/html/ecommerce/
+#RUN chown -R apache:apache /var/www/html/ecommerce/*
+#RUN chmod -R 755 /var/www/html/ecommerce/*
 
-# execução de comandos para instalação de pacotes.
-RUN docker-php-ext-configure mysqli
-RUN docker-php-ext-install mysqli
+# comentários.
+COPY . /var/www/html/ecommerce/
 
-# exposição da porta de comunicação do container.
-EXPOSE $APACHE_HTTP
-EXPOSE $APACHE_HTTPS
+# comentários.
+WORKDIR /var/www/html/ecommerce/
 
+# comentários.
+#ENTRYPOINT ["/var/www/html/ecommerce/ecommerce.sh"]
