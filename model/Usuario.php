@@ -28,7 +28,7 @@ class Usuario {
     }
 
     // comentários
-    public function pesquisar(){
+    public function pesquisarID(){
 
     }
 }

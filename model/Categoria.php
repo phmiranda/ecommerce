@@ -28,7 +28,7 @@ class Categoria {
     }
     
     // comentários
-    public function pesquisar(){
+    public function pesquisarID(){
         
     }
 }

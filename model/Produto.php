@@ -28,7 +28,7 @@ class Produto {
     }
 
     // comentários
-    public function pesquisar(){
+    public function pesquisarID(){
 
     }
 }
