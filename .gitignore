@@ -5,7 +5,6 @@ nbproject/
 
 # configurações do projeto
 config/config.ini
-conecta.php
 
 # bibliotecas de terceiros
 vendor/
