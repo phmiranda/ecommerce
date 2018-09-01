@@ -5,9 +5,9 @@ FROM centos:7
 MAINTAINER Pedro <pehhagah.1607@gmail.com>
 
 # comentários.
+RUN yum -y update
 RUN yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-RUN yum -y update
 RUN yum -y install curl
 RUN yum -y install httpd
 
