@@ -27,3 +27,14 @@ function excluir($conn, $id){
     $query = "DELETE FROM categorias WHERE id_categoria = {$id}";
     return mysqli_query($conn,$query);
 }
+
+// função de pesquisa por ID
+function pesquisarCategoriaPorNome($conn){
+    $categorias = array();
+    $query = "SELECT * FROM categorias";
+    $resultado = mysqli_query($conn, $query);
+    while ($categoria = mysqli_fetch_assoc($resultado)){
+        array_push($categorias, $categoria);
+    }
+    return $categorias;
+}

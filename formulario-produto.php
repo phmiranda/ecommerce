@@ -1,4 +1,11 @@
-<?php require_once('header.php'); ?>
+<?php
+require_once('header.php');
+require_once('conecta.php');
+require_once('banco-categoria.php');
+
+$categorias = pesquisarCategoriaPorNome($conn);
+?>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -18,8 +25,9 @@
                 <div class="form-group">
                     <label for="categoria"> Categoria: </label>
                     <select class="form-control" name="categoria_id">
-                        <option value="0" selected> Selecione uma opção </option>
-                        <option value="1"> Administrativo </option>
+                        <?php foreach ($categorias as $categoria):?>
+                            <option value="<?php echo $categoria->id_categoria?>"> <?php echo $categoria->nome ?> </option>
+                        <?php endforeach;?>
                     </select>
                 </div>
 

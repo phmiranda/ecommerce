@@ -4,8 +4,6 @@ require_once('header.php');
 require_once('conecta.php');
 require_once('banco-produto.php');
 
-
-
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
