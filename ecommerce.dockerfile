@@ -1,5 +1,5 @@
 # comentários.
-FROM ubuntu:latest
+FROM phmiranda/apache
 
 # comentários.
 MAINTAINER Pedro <pehhagah.1607@gmail.com>
@@ -9,8 +9,8 @@ ENV APACHE_HTTP_PORT=80
 ENV APACHE_HTTPS_PORT=443
 
 # instalação do servidor httpd.
-RUN apt-get update
-RUN apt-get install -y apache2
+RUN yum update
+RUN yum install -y httpd
 
 # inclusão do projeto no diretório.
 COPY . /var/www/html/
