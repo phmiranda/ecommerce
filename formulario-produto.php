@@ -1,6 +1,6 @@
 <?php
 require_once('header.php');
-require_once('conecta.php');
+require_once('configuracao.php');
 require_once('banco-categoria.php');
 
 $categorias = pesquisarCategoriaPorNome($conn);

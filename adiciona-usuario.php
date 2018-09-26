@@ -1,7 +1,7 @@
 <?php
 // comentários
 require_once('header.php');
-require_once('conecta.php');
+require_once('configuracao.php');
 require_once('banco-usuario.php');
 
 // captura os dados vindo do formulário.

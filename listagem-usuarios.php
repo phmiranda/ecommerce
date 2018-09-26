@@ -3,7 +3,7 @@
 require_once('header.php');
 
 // arquivo com a configuração do banco de dados.
-require_once('conecta.php');
+require_once('configuracao.php');
 
 // arquivo com as funções de persistências na base de dados.
 require_once('banco-usuario.php');
