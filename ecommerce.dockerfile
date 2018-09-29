@@ -1,26 +1,8 @@
-# comentários.
-FROM phmiranda/apache
-
-# comentários.
-MAINTAINER Pedro <pehhagah.1607@gmail.com>
-
-# comentários
-ENV APACHE_HTTP_PORT=80
-ENV APACHE_HTTPS_PORT=443
-
-# instalação do servidor httpd.
-RUN yum update
-RUN yum install -y httpd
-
-# inclusão do projeto no diretório.
-COPY . /var/www/html/
-
-# comentários
-EXPOSE $APACHE_HTTP_PORT
-EXPOSE $APACHE_HTTPS_PORT
-
-# comentários
-ENTRYPOINT []
-
-# comentários.
-#CMD ["./ecommerce.sh"]
+FROM centos:latest
+RUN yum update -y
+RUN yum -y install httpd
+RUN yum clean all
+RUN systemctl enable httpd.service
+COPY . /var/www/html
+EXPOSE 80
+CMD ["/usr/sbin/init"]
