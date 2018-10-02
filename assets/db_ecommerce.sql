@@ -18,6 +18,7 @@ CREATE TABLE produtos(
   id_produto INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   nome VARCHAR(100) NOT NULL ,
   preco DECIMAL (10,2) NOT NULL ,
+  situacao INT NOT NULL DEFAULT 0 ,
   descricao LONGTEXT NULL ,
   categoria_id INT NOT NULL,
   FOREIGN KEY(categoria_id) REFERENCES categorias(id_categoria)

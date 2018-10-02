@@ -8,10 +8,6 @@ config/config.ini
 database/Database.php
 configuracao.php
 
-# bibliotecas de terceiros
+# instalação de dependências
+composer.lock
 vendor/
-
-# scripts gerados para o banco de dados
-storage/schemas/*
-
-# demais configurações

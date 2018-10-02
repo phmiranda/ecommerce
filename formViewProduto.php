@@ -45,8 +45,9 @@ require_once('banco-produto.php');
                     <tr>
                         <th class="text-center"> # </th>
                         <th class="text-center"> Nome </th>
-                        <th class="text-center"> Valor Unitário </th>
                         <th class="text-center"> Categoria </th>
+                        <th class="text-center"> Situação </th>
+                        <th class="text-center"> Preço </th>
                         <th class="text-center"> Ações </th>
                     </tr>
                     </thead>
@@ -60,8 +61,9 @@ require_once('banco-produto.php');
                         <tr class="text-center">
                             <td> <?php echo $produto['id_produto'];?> </td>
                             <td> <?php echo $produto['nome'];?> </td>
-                            <td> <?php echo "R$ ".$produto['preco'];?> </td>
                             <td> <?php echo $produto['categoria_nome'];?> </td>
+                            <td> <?php echo $produto['situacao'];?> </td>
+                            <td> <?php echo "R$ ".$produto['preco'];?> </td>
                             <td>
                                 <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
                                 <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>

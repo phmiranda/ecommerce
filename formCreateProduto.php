@@ -32,6 +32,14 @@ $categorias = index($conn);
                 </div>
 
                 <div class="form-group">
+                    <label for="situacao"> Situação: </label>
+                    <select class="form-control" name="situacao">
+                        <option value="1"> Produto Novo </option>
+                        <option value="2"> Produto Usado </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label for="descricao"> Descrição: </label>
                     <textarea class="form-control" name="descricao"></textarea>
                 </div>
