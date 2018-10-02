@@ -26,7 +26,7 @@ require_once('banco-usuario.php');
         </div>
 
         <div class="col-md-3">
-            <a href="formulario-usuario.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
+            <a href="formCreateUsuario.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
         </div>
     </div>
 
@@ -63,7 +63,7 @@ require_once('banco-usuario.php');
                         <td>
                             <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
                             <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                            <a class="btn btn-danger btn-xs"  href="remove-usuario.php?id=<?php echo $usuario['id_usuario'];?>"><span class="glyphicon glyphicon-trash"></a>
+                            <a class="btn btn-danger btn-xs"  href="formDeleteUsuario.php?id=<?php echo $usuario['id_usuario'];?>"><span class="glyphicon glyphicon-trash"></a>
                         </td>
                     </tr>
                 <?php endforeach;?>

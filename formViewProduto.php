@@ -26,7 +26,7 @@ require_once('banco-produto.php');
             </div>
 
             <div class="col-md-3">
-                <a href="formulario-produto.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
+                <a href="formCreateProduto.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
             </div>
         </div>
 
@@ -45,9 +45,8 @@ require_once('banco-produto.php');
                     <tr>
                         <th class="text-center"> # </th>
                         <th class="text-center"> Nome </th>
-                        <th class="text-center"> Preço </th>
+                        <th class="text-center"> Valor Unitário </th>
                         <th class="text-center"> Categoria </th>
-                        <th class="text-center"> Descrição </th>
                         <th class="text-center"> Ações </th>
                     </tr>
                     </thead>
@@ -55,19 +54,18 @@ require_once('banco-produto.php');
                     <tbody>
                     <?php
                     // chama a função para exibir os registros.
-                    $produtos = index($conn);
+                    $produtos = pesquisarCategoriaPorNome($conn);
                     // cria um array com a lista de registros.
                     foreach($produtos as $produto): ?>
                         <tr class="text-center">
                             <td> <?php echo $produto['id_produto'];?> </td>
                             <td> <?php echo $produto['nome'];?> </td>
                             <td> <?php echo "R$ ".$produto['preco'];?> </td>
-                            <td> <?php echo $produto['categoria_id'];?> </td>
-                            <td> <?php echo $produto['descricao'];?> </td>
+                            <td> <?php echo $produto['categoria_nome'];?> </td>
                             <td>
                                 <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
                                 <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="remove-produto.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-trash"></a>
+                                <a class="btn btn-danger btn-xs"  href="formDeleteProduto.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>
                     <?php endforeach;?>

@@ -26,7 +26,7 @@ require_once('banco-categoria.php');
             </div>
 
             <div class="col-md-3">
-                <a href="formulario-categoria.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
+                <a href="formCreateCategoria.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
             </div>
         </div>
 
@@ -45,7 +45,6 @@ require_once('banco-categoria.php');
                     <tr>
                         <th class="text-center"> # </th>
                         <th class="text-center"> Nome </th>
-                        <th class="text-center"> Situação </th>
                         <th class="text-center"> Ações </th>
                     </tr>
                     </thead>
@@ -59,11 +58,10 @@ require_once('banco-categoria.php');
                         <tr class="text-center">
                             <td> <?php echo $categoria['id_categoria'];?> </td>
                             <td> <?php echo $categoria['nome'];?> </td>
-                            <td> <?php echo $categoria['situacao']?> </td>
                             <td>
                                 <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
                                 <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="remove-categoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-trash"></a>
+                                <a class="btn btn-danger btn-xs"  href="formDeleteCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>
                     <?php endforeach;?>

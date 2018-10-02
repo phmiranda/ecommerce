@@ -27,9 +27,9 @@
             <!-- comentário -->
             <div id="responsive-menu" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="listagem-categorias.php"> Categorias </a></li>
-                    <li><a href="listagem-produtos.php"> Produtos </a></li>
-                    <li><a href="listagem-usuarios.php"> Usuários </a></li>
+                    <li><a href="formViewCategoria.php"> Categorias </a></li>
+                    <li><a href="formViewProduto.php"> Produtos </a></li>
+                    <li><a href="formViewUsuario.php"> Usuários </a></li>
                 </ul>
             </div>
         </div>

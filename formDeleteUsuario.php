@@ -8,7 +8,7 @@ require_once('banco-usuario.php');
 $id = $_GET['id'];
 // verifica se foi inserido ou não os dados capturados no formulário.
 excluir($conn, $id);
-header("Location: listagem-usuarios.php?removido=true");
+header("Location: formViewUsuario.php?removido=true");
 die();
 
 // inclui o rodapé da página no arquivo.

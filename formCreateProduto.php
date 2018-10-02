@@ -1,15 +1,15 @@
 <?php
 require_once('header.php');
 require_once('configuracao.php');
-require_once('banco-produto.php');
+require_once('banco-categoria.php');
 
-$categorias = pesquisarCategoriaPorNome($conn);
+$categorias = index($conn);
 ?>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <form method="post" action="adiciona-produto.php">
+            <form method="post" action="formRequestProduto.php">
                 <h3> Cadastrar Produto </h3>
                 <hr>
                 <div class="form-group">
@@ -26,7 +26,7 @@ $categorias = pesquisarCategoriaPorNome($conn);
                     <label for="categoria"> Categoria: </label>
                     <select class="form-control" name="categoria_id">
                         <?php foreach ($categorias as $categoria):?>
-                            <option value="<?php echo $categoria->id_categoria?>"> <?php echo $categoria->nome ?> </option>
+                            <option value="<?php echo $categoria['id_categoria'] ?>"> <?php echo $categoria['nome'] ?> </option>
                         <?php endforeach;?>
                     </select>
                 </div>
