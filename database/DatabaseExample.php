@@ -7,7 +7,7 @@
  */
 
 # comentários
-class Connection {
+class DatabaseExample {
     # comentários
     public function connect(){
 
