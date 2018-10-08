@@ -27,9 +27,31 @@
             <!-- comentário -->
             <div id="responsive-menu" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="formViewCategoria.php"> Categorias </a></li>
-                    <li><a href="formViewProduto.php"> Produtos </a></li>
-                    <li><a href="formViewUsuario.php"> Usuários </a></li>
+                    <!-- comentários -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Administração <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="formViewProduto.php"> Produtos </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- comentários -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Configuração <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="formViewCategoria.php"> Categorias </a></li>
+                            <li><a href="#"> Situação </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- comentários -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Segurança <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Perfis </a></li>
+                            <li><a href="formViewUsuario.php"> Usuários </a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
