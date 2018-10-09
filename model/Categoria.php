@@ -28,7 +28,12 @@ class Categoria {
     }
     
     // comentários
-    public function pesquisarID(){
+    public function pesquisarPorIdentificador(){
         
+    }
+
+    // comentários
+    public function pesquisarNomeCategoria(){
+        $query = "";
     }
 }

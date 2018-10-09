@@ -6,15 +6,9 @@
  * Time: 16:35
  */
 
-# comentários
 class DatabaseExample {
-    # comentários
+    # função de conexão com a base de dados.
     public function connect(){
-
-    }
-
-    # comentários
-    public function disconnect(){
 
     }
 }

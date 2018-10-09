@@ -1,12 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: 04325469109
- * Date: 22/06/2018
- * Time: 11:35
+ * User: Administrador
+ * Date: 09/10/2018
+ * Time: 08:14
  */
 
-class Usuario {
+class Situacao {
     // comentários
     public function index(){
 
