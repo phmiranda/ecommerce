@@ -6,7 +6,7 @@ require_once('header.php');
 require_once('configuracao.php');
 
 // arquivo com as funções de persistências na base de dados.
-require_once('banco-produto.php');
+require_once('classProduto.php');
 ?>
     <div class="container">
         <div class="row">

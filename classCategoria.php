@@ -12,7 +12,7 @@ function index($conn){
 }
 
 // função de inserção de registros.
-function salvar($conn, $nome, $situacao, $descricao){
+function salvar($conn, $nome, $descricao){
     $query = "INSERT INTO categorias(nome, descricao) VALUES('{$nome}','{$descricao}')";
     return mysqli_query($conn, $query);
 }

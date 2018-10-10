@@ -6,12 +6,12 @@ require_once('header.php');
 require_once('configuracao.php');
 
 // arquivo com as funções de persistências na base de dados.
-require_once('classCategoria.php');
+require_once('classSituacao.php');
 ?>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h2> Categorias </h2>
+                <h2> Situações </h2>
             </div>
 
             <div class="col-md-6">
@@ -26,7 +26,7 @@ require_once('classCategoria.php');
             </div>
 
             <div class="col-md-3">
-                <a href="formCreateCategoria.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
+                <a href="formCreateSituacao.php" class="btn btn-primary pull-right h2"> Cadastrar </a>
             </div>
         </div>
 
@@ -37,7 +37,7 @@ require_once('classCategoria.php');
                 <?php
                 // verifica a remoção do registro na listagem.
                 if(array_key_exists("removido", $_GET) && $_GET['removido']=='true'){
-                    echo "<p class='alert-success text-center'> A categoria foi excluída com sucesso </p>";
+                    echo "<p class='alert-success text-center'> A situação foi excluída com sucesso </p>";
                 }
                 ?>
                 <table class="table table-striped" cellspacing="0" cellpadding="0">
@@ -52,16 +52,16 @@ require_once('classCategoria.php');
                     <tbody>
                     <?php
                     // chama a função para exibir os registros.
-                    $categorias = index($conn);
+                    $situacoes = index($conn);
                     // cria um array com a lista de registros.
-                    foreach($categorias as $categoria): ?>
+                    foreach($situacoes as $situacao): ?>
                         <tr class="text-center">
-                            <td> <?php echo $categoria['id_categoria'];?> </td>
-                            <td> <?php echo $categoria['nome'];?> </td>
+                            <td> <?php echo $situacao['id_situacao'];?> </td>
+                            <td> <?php echo $situacao['nome'];?> </td>
                             <td>
                                 <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
                                 <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="formDeleteCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-trash"></a>
+                                <a class="btn btn-danger btn-xs"  href="formDeleteSituacao.php?id=<?php echo $situacao['id_situacao'];?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>
                     <?php endforeach;?>

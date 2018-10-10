@@ -2,7 +2,7 @@
 // comentários
 require_once('header.php');
 require_once('configuracao.php');
-require_once('banco-produto.php');
+require_once('classProduto.php');
 
 // captura o id vindo da listagem de registros.
 $id = $_GET['id'];

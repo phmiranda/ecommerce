@@ -2,7 +2,7 @@
 // comentários
 require_once('header.php');
 require_once('configuracao.php');
-require_once('classCategoria.php');
+require_once('classPerfil.php');
 
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];

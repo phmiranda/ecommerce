@@ -1,7 +1,7 @@
 <?php
 require_once('header.php');
 require_once('configuracao.php');
-require_once('banco-categoria.php');
+require_once('classCategoria.php');
 
 $categorias = index($conn);
 ?>
