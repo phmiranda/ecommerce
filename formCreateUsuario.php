@@ -19,6 +19,13 @@
                         <label for="senha"> Senha: </label>
                         <input class="form-control" type="password" name="senha">
                     </div>
+
+                    <div class="form-group">
+                        <label for="perfil"> Perfil: </label>
+                        <select class="form-control" name="perfil_id">
+                            <option value="1"> Administrador </option>
+                        </select>
+                    </div>
                     <button class="btn btn-success btn-block" type="submit"> Cadastrar </button>
                 </form>
             </div>
