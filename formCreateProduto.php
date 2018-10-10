@@ -33,7 +33,7 @@ $categorias = index($conn);
 
                 <div class="form-group">
                     <label for="situacao"> Situação: </label>
-                    <select class="form-control" name="situacao">
+                    <select class="form-control" name="situacao_id">
                         <option value="1"> Produto Novo </option>
                         <option value="2"> Produto Usado </option>
                     </select>

@@ -12,8 +12,8 @@ function index($conn){
 }
 
 // função de inserção de registros.
-function salvar($conn, $nome, $preco, $situacao, $descricao, $categoria_id){
-    $query = "INSERT INTO produtos(nome, preco, situacao, descricao, categoria_id) VALUES('{$nome}','{$preco}','{$situacao}','{$descricao}','{$categoria_id}')";
+function salvar($conn, $nome, $preco, $descricao, $categoria_id, $situacao_id){
+    $query = "INSERT INTO produtos(nome, preco, descricao, categoria_id,situacao_id) VALUES('{$nome}','{$preco}','{$descricao}','{$categoria_id}','{$situacao_id}')";
     return mysqli_query($conn, $query);
 }
 
