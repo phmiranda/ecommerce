@@ -3,7 +3,9 @@ FROM ubuntu:16.04
 
 # comentários.
 #ENV DIR_HOST="D:\Sistemas\alura\ecommerce"
+#ENV DIR_WORKDIR="D:\Sistemas\alura\ecommerce"
 #ENV DIR_CONTAINER="/var/www/html/"
+#ENV DIR_WORKDIR="/var/www/html/"
 
 # comentários.
 RUN apt-get update -y
@@ -50,6 +52,9 @@ RUN apt-get install -y sudo
 
 # comentários.
 #EXPOSE 80,443
+
+# comando para instalação das dependências do projeto.
+#ENTRYPOINT ["composer","install"]
 
 # execução automática do apache ao instalar os softwares necessários.
 #CMD ["/usr/sbin/init"]
