@@ -5,9 +5,11 @@ nbproject/
 
 # configurações do projeto
 config/config.ini
+database/Database.php
 
 # bibliotecas de terceiros
-vendor/
+vendor
+node_modules
 
 # scripts gerados para o banco de dados
 storage/schemas/*
