@@ -40,7 +40,6 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Configuração <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="formViewCategoria.php"> Categorias </a></li>
-                            <li><a href="formViewSituacao.php"> Situação </a></li>
                         </ul>
                     </li>
 
@@ -48,7 +47,6 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Segurança <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="formViewPerfil.php"> Perfis </a></li>
                             <li><a href="formViewUsuario.php"> Usuários </a></li>
                         </ul>
                     </li>

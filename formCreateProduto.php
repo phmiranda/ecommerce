@@ -1,7 +1,7 @@
 <?php
-require_once('header.php');
+require_once('helperCabecalho.php');
 require_once('configuracao.php');
-require_once('classCategoria.php');
+require_once('modeloCategoria.php');
 
 $categorias = index($conn);
 ?>
@@ -49,4 +49,4 @@ $categorias = index($conn);
         </div>
     </div>
 </div>
-<?php require_once('footer.php'); ?>
+<?php require_once('helperRodape.php'); ?>

@@ -1,8 +1,8 @@
 <?php
 // comentários
-require_once('header.php');
+require_once('helperCabecalho.php');
 require_once('configuracao.php');
-require_once('classUsuario.php');
+require_once('modeloUsuario.php');
 
 // captura o id vindo da listagem de registros.
 $id = $_GET['id'];
@@ -12,4 +12,4 @@ header("Location: formViewUsuario.php?removido=true");
 die();
 
 // inclui o rodapé da página no arquivo.
-require_once('footer.php');
+require_once('helperRodape.php');

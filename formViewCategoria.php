@@ -1,12 +1,12 @@
 <?php
 // arquivo necessário para renderização do menu superior.
-require_once('header.php');
+require_once('helperCabecalho.php');
 
 // arquivo com a configuração do banco de dados.
 require_once('configuracao.php');
 
 // arquivo com as funções de persistências na base de dados.
-require_once('classCategoria.php');
+require_once('modeloCategoria.php');
 ?>
     <div class="container">
         <div class="row">
@@ -70,4 +70,4 @@ require_once('classCategoria.php');
             </div>
         </div>
     </div>
-<?php require_once('footer.php');?>
+<?php require_once('helperRodape.php');?>

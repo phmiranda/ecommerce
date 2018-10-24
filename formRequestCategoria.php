@@ -1,8 +1,8 @@
 <?php
 // comentários
-require_once('header.php');
+require_once('helperCabecalho.php');
 require_once('configuracao.php');
-require_once('classCategoria.php');
+require_once('modeloCategoria.php');
 
 // captura os dados vindo do formulário.
 $nome = $_POST['nome'];
@@ -18,4 +18,4 @@ if (salvar($conn, $nome, $descricao)){
 }
 
 // inclui o rodapé da página no arquivo.
-require_once('footer.php');
+require_once('helperRodape.php');
