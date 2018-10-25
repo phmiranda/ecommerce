@@ -1,9 +1,17 @@
 {
-  "name": "Sistemas de Comércio Eletrônico",
+  "name":"phmiranda/ecommerce",
   "version": "1.0.0",
-  "dependencies": {
-
-  },
+  "license": "MIT",
+  "type": "sistema",
+  "description": "sistema de administração comercial desenvolvido durante o curso de PHP da alura.",
+  "authors": [
+    {
+      "name": "Pedro Henrique Marques Miranda",
+      "email": "pehhagah.1607@gmail.com",
+      "homepage": "https://phmiranda.com.br",
+      "role": "Developer"
+    }
+  ],
   "require": {
     "almasaeed2010/adminlte": "~2.4",
     "components/jquery": "^3.3",
@@ -12,5 +20,6 @@
     "twig/twig": "^2.5"
   },
   "require-dev": {
+
   }
 }
