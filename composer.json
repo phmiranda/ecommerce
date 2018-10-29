@@ -15,8 +15,8 @@
   "require": {
     "almasaeed2010/adminlte": "~2.4",
     "components/jquery": "^3.3",
-    "phpunit/phpunit": "6.4",
     "twbs/bootstrap": "3.3.7",
+    "phpunit/phpunit": "6.4",
     "twig/twig": "^2.5"
   },
   "require-dev": {
