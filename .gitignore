@@ -11,4 +11,6 @@ default.php
 
 # instalação de dependências
 composer.lock
+package-lock.json
+node_modules/
 vendor/
