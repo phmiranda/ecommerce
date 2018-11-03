@@ -12,8 +12,8 @@ function index($conn){
 }
 
 // função de inserção de registros.
-function salvar($conn, $nome, $email, $senha, $perfil_id){
-    $query = "INSERT INTO usuarios(nome, email, senha, perfil_id) VALUES('{$nome}','{$email}','{$senha}','{$perfil_id}')";
+function salvar($conn, $nome, $email, $senha){
+    $query = "INSERT INTO usuarios(nome, email, senha) VALUES('{$nome}','{$email}','{$senha}')";
     return mysqli_query($conn, $query);
 }
 

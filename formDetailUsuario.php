@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <form method="post" action="formRequestUsuario.php">
-                    <h3> Cadastrar Usuário </h3>
+                    <h3> Visualizar Usuário </h3>
                     <hr>
                     <div class="form-group">
                         <label for="nome"> Nome Completo: </label>
@@ -14,12 +14,6 @@
                         <label for="email"> E-Mail: </label>
                         <input class="form-control" type="email" name="email">
                     </div>
-
-                    <div class="form-group">
-                        <label for="senha"> Senha: </label>
-                        <input class="form-control" type="password" name="senha">
-                    </div>
-                    <button class="btn btn-success btn-block" type="submit"> Cadastrar </button>
                 </form>
             </div>
         </div>

@@ -7,6 +7,7 @@ require_once('configuracao.php');
 
 // arquivo com as funções de persistências na base de dados.
 require_once('modeloProduto.php');
+require_once('modeloCategoria.php');
 ?>
     <div class="container">
         <div class="row">
@@ -65,8 +66,8 @@ require_once('modeloProduto.php');
                             <td> <?php echo $produto['situacao_id'];?> </td>
                             <td> <?php echo "R$ ".$produto['preco'];?> </td>
                             <td>
-                                <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
-                                <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
+                                <a class="btn btn-info btn-xs" href="formDetailProduto.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-list-alt"></a>
+                                <a class="btn btn-warning btn-xs" href="formEditUsuario.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a class="btn btn-danger btn-xs"  href="formDeleteProduto.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>

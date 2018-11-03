@@ -59,8 +59,8 @@ require_once('modeloCategoria.php');
                             <td> <?php echo $categoria['id_categoria'];?> </td>
                             <td> <?php echo $categoria['nome'];?> </td>
                             <td>
-                                <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
-                                <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
+                                <a class="btn btn-info btn-xs" href="formDetailCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-list-alt"></a>
+                                <a class="btn btn-warning btn-xs" href="formEditCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a class="btn btn-danger btn-xs"  href="formDeleteCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>

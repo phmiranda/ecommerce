@@ -8,10 +8,9 @@ require_once('modeloUsuario.php');
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = md5($_POST['senha']);
-$perfil_id = $_POST['perfil_id'];
 
 // verifica se foi inserido ou não os dados capturados no formulário.
-if (salvar($conn, $nome, $email, $senha, $perfil_id)){
+if (salvar($conn, $nome, $email, $senha)){
     echo "<p class='text-success principal'>O usuário {$nome} foi adicionada com sucesso.</p>";
 }else{
     // tratamento de erro nativo do mysqli.

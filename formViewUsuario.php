@@ -61,9 +61,9 @@ require_once('modeloUsuario.php');
                         <td> <?php echo $usuario['nome'];?> </td>
                         <td> <?php echo $usuario['email'];?> </td>
                         <td>
-                            <a class="btn btn-info btn-xs" href="#"><span class="glyphicon glyphicon-list-alt"></a>
-                            <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                            <a class="btn btn-danger btn-xs"  href="formDeleteUsuario.phpd=<?php echo $usuario['id_usuario'];?>"><span class="glyphicon glyphicon-trash"></a>
+                            <a class="btn btn-info btn-xs" href="formDetailUsuario.php?id=<?php echo $usuario['id_usuario'];?>"><span class="glyphicon glyphicon-list-alt"></a>
+                            <a class="btn btn-warning btn-xs" href="formEditUsuario.php?id=<?php echo $usuario['id_usuario'];?>"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a class="btn btn-danger btn-xs"  href="formDeleteUsuario.php?id=<?php echo $usuario['id_usuario'];?>"><span class="glyphicon glyphicon-trash"></a>
                         </td>
                     </tr>
                 <?php endforeach;?>
