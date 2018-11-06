@@ -8,7 +8,7 @@
 
 class DatabaseExample {
     # função de conexão com a base de dados.
-    public function connect(){
+    public function conectar(){
 
     }
 }

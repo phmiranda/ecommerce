@@ -8,32 +8,22 @@
 
 class Categoria {
     // comentários
-    public function index(){
+    public function indexCategoria(){
 
     }
 
     // comentários
-    public function salvar(){
+    public function salvarCategoria(){
 
     }
 
     // comentários
-    public function editar(){
+    public function editarCategoria(){
 
     }
 
     // comentários
-    public function excluir(){
+    public function excluirCategoria(){
         
-    }
-    
-    // comentários
-    public function pesquisarPorIdentificador(){
-        
-    }
-
-    // comentários
-    public function pesquisarNomeCategoria(){
-        $query = "";
     }
 }

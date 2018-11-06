@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Alura </title>
+    <title> SGCE ™ </title>
     <link rel="icon" href="public/favicon.png">
     <link rel="stylesheet" href="public/css/bootstrap.css">
     <link rel="stylesheet" href="public/css/assets.css">
@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- comentário -->
-                <a class="navbar-brand" href="index.php"> Controle de Estoque </a>
+                <a class="navbar-brand" href="index.php"> SGCE </a>
             </div>
 
             <!-- comentário -->
@@ -30,7 +30,6 @@
                     <!-- comentários -->
                     <li><a href="formViewCategoria.php"> Categorias </a></li>
                     <li><a href="formViewProduto.php"> Produtos </a></li>
-                    <li><a href="formViewUsuario.php"> Usuários </a></li>
                 </ul>
             </div>
         </div>

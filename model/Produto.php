@@ -8,27 +8,22 @@
 
 class Produto {
     // comentários
-    public function index(){
+    public function indexProduto(){
 
     }
 
     // comentários
-    public function salvar(){
+    public function salvarProduto(){
 
     }
 
     // comentários
-    public function editar(){
+    public function editarProduto(){
 
     }
 
     // comentários
-    public function excluir(){
-
-    }
-
-    // comentários
-    public function pesquisarPorIdentificador(){
+    public function excluirProduto(){
 
     }
 }

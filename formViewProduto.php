@@ -1,14 +1,4 @@
-<?php
-// arquivo necessário para renderização do menu superior.
-require_once('helperCabecalho.php');
-
-// arquivo com a configuração do banco de dados.
-require_once('configuracao.php');
-
-// arquivo com as funções de persistências na base de dados.
-require_once('modeloProduto.php');
-require_once('modeloCategoria.php');
-?>
+<?php require_once('helperCabecalho.php'); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -36,45 +26,30 @@ require_once('modeloCategoria.php');
         <div class="row">
             <div class="table-responsive col-md-12">
                 <table class="table table-striped" cellspacing="0" cellpadding="0">
-                    <?php
-                    // verifica a remoção do registro na listagem.
-                    if(array_key_exists("removido", $_GET) && $_GET['removido']=='true'){
-                        echo "<p class='alert-success text-center'> O produto foi excluída com sucesso </p>";
-                    }
-                    ?>
                     <thead>
                     <tr>
                         <th class="text-center"> # </th>
                         <th class="text-center"> Nome </th>
-                        <th class="text-center"> Categoria </th>
-                        <th class="text-center"> Situação </th>
                         <th class="text-center"> Preço </th>
+                        <th class="text-center"> Categoria </th>
                         <th class="text-center"> Ações </th>
                     </tr>
                     </thead>
 
                     <tbody>
-                    <?php
-                    // chama a função para exibir os registros.
-                    $produtos = pesquisarCategoriaPorNome($conn);
-                    // cria um array com a lista de registros.
-                    foreach($produtos as $produto): ?>
-                        <tr class="text-center">
-                            <td> <?php echo $produto['id_produto'];?> </td>
-                            <td> <?php echo $produto['nome'];?> </td>
-                            <td> <?php echo $produto['categoria_nome'];?> </td>
-                            <td> <?php echo $produto['situacao_id'];?> </td>
-                            <td> <?php echo "R$ ".$produto['preco'];?> </td>
-                            <td>
-                                <a class="btn btn-info btn-xs" href="formDetailProduto.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-list-alt"></a>
-                                <a class="btn btn-warning btn-xs" href="formEditUsuario.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="formDeleteProduto.php?id=<?php echo $produto['id_produto'];?>"><span class="glyphicon glyphicon-trash"></a>
-                            </td>
-                        </tr>
-                    <?php endforeach;?>
+                    <tr class="text-center">
+                        <td> # </td>
+                        <td> # </td>
+                        <td> # </td>
+                        <td> # </td>
+                        <td>
+                            <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
+                            <a class="btn btn-danger btn-xs"  href="#"><span class="glyphicon glyphicon-trash"></a>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-<?php ?>
+<?php require_once('helperRodape.php'); ?>

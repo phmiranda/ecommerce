@@ -8,27 +8,22 @@
 
 class Usuario {
     // comentários
-    public function index(){
+    public function indexUsuario(){
 
     }
 
     // comentários
-    public function salvar(){
+    public function salvarUsuario(){
 
     }
 
     // comentários
-    public function editar(){
+    public function editarUsuario(){
 
     }
 
     // comentários
-    public function excluir(){
-
-    }
-
-    // comentários
-    public function pesquisarPorIdentificador(){
+    public function excluirUsuario(){
 
     }
 }

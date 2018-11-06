@@ -9,8 +9,7 @@ CREATE TABLE usuarios(
 /* @categorias */
 CREATE TABLE categorias(
   id_categoria INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
-  nome VARCHAR(50) NOT NULL ,
-  descricao LONGTEXT NULL DEFAULT 'N/A'
+  nome VARCHAR(30) NOT NULL
 );
 
 /* @produtos */
@@ -20,6 +19,5 @@ CREATE TABLE produtos(
   preco DECIMAL (10,2) NOT NULL ,
   descricao LONGTEXT NULL DEFAULT 'N/A',
   categoria_id INT NOT NULL,
-  situacao_id INT NOT NULL ,
   FOREIGN KEY(categoria_id) REFERENCES categorias(id_categoria)
 );

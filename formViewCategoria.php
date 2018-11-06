@@ -1,14 +1,5 @@
-<?php
-// arquivo necessário para renderização do menu superior.
-require_once('helperCabecalho.php');
-
-// arquivo com a configuração do banco de dados.
-require_once('configuracao.php');
-
-// arquivo com as funções de persistências na base de dados.
-require_once('modeloCategoria.php');
-?>
-    <div class="container">
+<?php require_once('helperCabecalho.php'); ?>
+     <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <h2> Categorias </h2>
@@ -18,10 +9,10 @@ require_once('modeloCategoria.php');
                 <div class="input-group h2">
                     <input name="data[search]" class="form-control" id="search" type="text" placeholder="Digite">
                     <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit">
-                    <span class="glyphicon glyphicon-search"></span>
-                </button>
-            </span>
+                    <button class="btn btn-primary" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
                 </div>
             </div>
 
@@ -34,40 +25,28 @@ require_once('modeloCategoria.php');
 
         <div class="row">
             <div class="table-responsive col-md-12">
-                <?php
-                // verifica a remoção do registro na listagem.
-                if(array_key_exists("removido", $_GET) && $_GET['removido']=='true'){
-                    echo "<p class='alert-success text-center'> A categoria foi excluída com sucesso </p>";
-                }
-                ?>
                 <table class="table table-striped" cellspacing="0" cellpadding="0">
                     <thead>
-                    <tr>
-                        <th class="text-center"> # </th>
-                        <th class="text-center"> Nome </th>
-                        <th class="text-center"> Ações </th>
-                    </tr>
+                        <tr>
+                            <th class="text-center"> # </th>
+                            <th class="text-center"> Nome </th>
+                            <th class="text-center"> Ações </th>
+                        </tr>
                     </thead>
 
                     <tbody>
-                    <?php
-                    // chama a função para exibir os registros.
-                    $categorias = index($conn);
-                    // cria um array com a lista de registros.
-                    foreach($categorias as $categoria): ?>
                         <tr class="text-center">
-                            <td> <?php echo $categoria['id_categoria'];?> </td>
-                            <td> <?php echo $categoria['nome'];?> </td>
+                            <td> # </td>
+                            <td> # </td>
+                            <td> # </td>
                             <td>
-                                <a class="btn btn-info btn-xs" href="formDetailCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-list-alt"></a>
-                                <a class="btn btn-warning btn-xs" href="formEditCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="formDeleteCategoria.php?id=<?php echo $categoria['id_categoria'];?>"><span class="glyphicon glyphicon-trash"></a>
+                                <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
+                                <a class="btn btn-danger btn-xs"  href="#"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>
-                    <?php endforeach;?>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-<?php require_once('helperRodape.php');?>
+<?php require_once('helperRodape.php'); ?>
