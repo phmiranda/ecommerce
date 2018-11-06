@@ -1,5 +1,1 @@
-/**
- * @Author
- */
-
-/* comments */
+/* comentários. */
