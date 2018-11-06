@@ -9,7 +9,7 @@ require_once('modeloCategoria.php');
 $nome = $_POST['nome'];
 
 // comentários.
-if(salvarCategoria($conn, $nome)){
+if(salvarCategoria($conn, $nome) && $nome != NULL){
     echo "<p class='text-success principal'> A categoria {$nome} foi cadastrada com sucesso.</p>";
 }else{
     $msg = mysqli_error($conn);

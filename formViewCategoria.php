@@ -1,4 +1,21 @@
-<?php require_once('helperCabecalho.php'); ?>
+<?php
+// comentários.
+require_once('helperCabecalho.php');
+
+// comentários.
+require_once('configuracao.php');
+
+// comentários.
+require_once('modeloCategoria.php');
+
+// comentários
+if(array_key_exists("removido", $_GET) && $_GET["removido"]=="true"){
+    echo "<p class='text-center text-warning'> O Produto foi removido com sucesso. </p>";
+}
+
+// comentários.
+$produtos = indexCategoria($conn);
+?>
      <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -7,7 +24,7 @@
 
             <div class="col-md-6">
                 <div class="input-group h2">
-                    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Digite">
+                    <input id="pesquisarRegistro" class="form-control" type="text" name="data[search]" placeholder="Digite algo para buscar o registro na tabela abaixo.">
                     <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">
                         <span class="glyphicon glyphicon-search"></span>
@@ -35,15 +52,19 @@
                     </thead>
 
                     <tbody>
+                        <?php
+                        # comentários.
+                        foreach($produtos as $produto):
+                        ?>
                         <tr class="text-center">
-                            <td> # </td>
-                            <td> # </td>
-                            <td> # </td>
+                            <td><?php echo $produto['id_categoria']?></td>
+                            <td><?php echo $produto['nome']?></td>
                             <td>
                                 <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="#"><span class="glyphicon glyphicon-trash"></a>
+                                <a class="btn btn-danger btn-xs"  href="formRequestDeleteCategoria.php?id=<?php echo $produto['id_categoria']?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>
+                        <?php endforeach;?>
                     </tbody>
                 </table>
             </div>

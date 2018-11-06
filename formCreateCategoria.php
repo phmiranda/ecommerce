@@ -1,9 +1,9 @@
 <?php require_once('helperCabecalho.php'); ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-4 col-md-offset-4">
                 <form method="POST" action="formRequestCreateCategoria.php">
-                    <h3> Formulário de Categoria </h3>
+                    <h3 class="text-center"> Formulário de Categoria </h3>
                     <hr>
                     <div class="form-group">
                         <label for="nome"> Nome: </label>
