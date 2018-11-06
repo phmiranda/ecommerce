@@ -7,22 +7,28 @@
  */
 
 class Usuario {
-    // comentários
+    // comentários.
+    public $id;
+    public $nome;
+    public $email;
+    public $senha;
+
+    // comentários.
     public function indexUsuario(){
 
     }
 
-    // comentários
+    // comentários.
     public function salvarUsuario(){
 
     }
 
-    // comentários
+    // comentários.
     public function editarUsuario(){
 
     }
 
-    // comentários
+    // comentários.
     public function excluirUsuario(){
 
     }

@@ -7,22 +7,26 @@
  */
 
 class Categoria {
-    // comentários
+    // comentários.
+    public $id;
+    public $nome;
+
+    // comentários.
     public function indexCategoria(){
 
     }
 
-    // comentários
+    // comentários.
     public function salvarCategoria(){
 
     }
 
-    // comentários
+    // comentários.
     public function editarCategoria(){
 
     }
 
-    // comentários
+    // comentários.
     public function excluirCategoria(){
         
     }

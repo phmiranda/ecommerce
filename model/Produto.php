@@ -7,22 +7,29 @@
  */
 
 class Produto {
-    // comentários
+    // comentários.
+    public $id;
+    public $nome;
+    public $preco;
+    public $descricao;
+    public $categoria_id;
+
+    // comentários.
     public function indexProduto(){
 
     }
 
-    // comentários
+    // comentários.
     public function salvarProduto(){
 
     }
 
-    // comentários
+    // comentários.
     public function editarProduto(){
 
     }
 
-    // comentários
+    // comentários.
     public function excluirProduto(){
 
     }
