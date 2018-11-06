@@ -1,3 +1,6 @@
+/* criação da base de dados */
+CREATE DATABASE IF NOT EXISTS db_ecommerce CHARACTER SET UTF8 COLLATE uft8_bin
+
 /* @usuarios */
 CREATE TABLE usuarios(
   id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
