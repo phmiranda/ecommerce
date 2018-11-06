@@ -1,7 +1,7 @@
 <?php require_once('helperCabecalho.php'); ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-4 col-md-offset-4">
                 <form method="POST" action="formRequestCreateProduto.php">
                     <h3> Formulário de Produto </h3>
                     <hr>
