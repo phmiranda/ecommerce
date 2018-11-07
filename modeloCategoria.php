@@ -18,7 +18,7 @@ function salvarCategoria($conn, $nome){
 }
 
 // função de edição de registros.
-function editarCategoria($conn, $id, $nome, $descricao){
+function editarCategoria($conn, $id, $nome){
     $query = "UPDATE categorias SET nome = '{$nome}' WHERE id_categoria = {$id}";
     return mysqli_query($conn, $query);
 }

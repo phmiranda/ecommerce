@@ -14,7 +14,7 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]=="true"){
 }
 
 // comentários.
-$produtos = indexCategoria($conn);
+$categorias = indexCategoria($conn);
 ?>
      <div class="container">
         <div class="row">
@@ -54,14 +54,14 @@ $produtos = indexCategoria($conn);
                     <tbody>
                         <?php
                         # comentários.
-                        foreach($produtos as $produto):
+                        foreach($categorias as $categoria):
                         ?>
                         <tr class="text-center">
-                            <td><?php echo $produto['id_categoria']?></td>
-                            <td><?php echo $produto['nome']?></td>
+                            <td><?php echo $categoria['id_categoria']?></td>
+                            <td><?php echo $categoria['nome']?></td>
                             <td>
-                                <a class="btn btn-warning btn-xs" href="#"><span class="glyphicon glyphicon-edit"></span></a>
-                                <a class="btn btn-danger btn-xs"  href="formRequestDeleteCategoria.php?id=<?php echo $produto['id_categoria']?>"><span class="glyphicon glyphicon-trash"></a>
+                                <a class="btn btn-warning btn-xs" href="formEditCategoria.php?id=<?php echo $categoria['id_categoria']?>"><span class="glyphicon glyphicon-edit"></span></a>
+                                <a class="btn btn-danger btn-xs"  href="formRequestDeleteCategoria.php?id=<?php echo $categoria['id_categoria']?>"><span class="glyphicon glyphicon-trash"></a>
                             </td>
                         </tr>
                         <?php endforeach;?>
