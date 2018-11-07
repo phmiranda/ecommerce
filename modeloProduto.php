@@ -12,14 +12,14 @@ function indexProduto($conn){
 }
 
 // função de inserção de registros.
-function salvarProduto($conn, $nome, $preco, $descricao, $categoria_id){
-    $query = "INSERT INTO produtos(nome, preco, descricao, categoria_id) VALUES('{$nome}','{$preco}','{$descricao}','{$categoria_id}')";
+function salvarProduto($conn, $nome, $preco, $situacao, $descricao, $categoria_id){
+    $query = "INSERT INTO produtos(nome, preco, situacao, descricao, categoria_id) VALUES('$nome', {$preco}, {$situacao},'{$descricao}', {$categoria_id})";
     return mysqli_query($conn, $query);
 }
 
 // função de edição de registros.
-function editarProduto($conn, $id, $nome, $preco, $descricao, $categoria_id){
-    $query = "UPDATE produtos SET nome = '{$nome}',preco = {$preco},descricao = '{$descricao}', categoria_id = {$categoria_id} WHERE id_categoria = {$id}";
+function editarProduto($conn, $id, $nome, $preco, $situacao, $descricao, $categoria_id){
+    $query = "UPDATE produtos SET nome = '{$nome}',preco = '{$preco}', situacao = {$situacao},descricao = '{$descricao}', categoria_id = {$categoria_id} WHERE id_categoria = {$id}";
     return mysqli_query($conn, $query);
 }
 

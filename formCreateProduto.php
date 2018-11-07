@@ -23,6 +23,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="situacao"> Usado </label>
+                        <input class=checkbox" type="checkbox" name="situacao">
+                    </div>
+
+                    <div class="form-group">
                         <label for="descricao"> Descrição: </label>
                         <textarea class="form-control" name="descricao" required></textarea>
                     </div>
