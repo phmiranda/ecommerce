@@ -8,9 +8,9 @@ require_once('configuracao.php');
 // comentários.
 require_once('modeloCategoria.php');
 
-// comentários
+// comentários.
 if(array_key_exists("removido", $_GET) && $_GET["removido"]=="true"){
-    echo "<p class='text-center text-warning'> O Produto foi removido com sucesso. </p>";
+    echo "<p class='text-center text-info'> A categoria foi removido com sucesso. </p>";
 }
 
 // comentários.
@@ -52,10 +52,7 @@ $categorias = indexCategoria($conn);
                     </thead>
 
                     <tbody>
-                        <?php
-                        # comentários.
-                        foreach($categorias as $categoria):
-                        ?>
+                        <?php foreach($categorias as $categoria): ?>
                         <tr class="text-center">
                             <td><?php echo $categoria['id_categoria']?></td>
                             <td><?php echo $categoria['nome']?></td>

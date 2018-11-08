@@ -16,7 +16,7 @@ $categoria = pesquisarCategoria($conn, $id);
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <form method="POST" action="formRequestEditCategoria.php">
-                    <h3 class="text-center"> Alterar Categoria </h3>
+                    <h3 class="text-center"> Editar Categoria </h3>
                     <hr>
                     <input type="hidden" name="id_categoria" value="<?php echo $categoria['id_categoria']?>">
                     <div class="form-group">

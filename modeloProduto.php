@@ -19,7 +19,9 @@ function salvarProduto($conn, $nome, $preco, $situacao, $descricao, $categoria_i
 
 // função de edição de registros.
 function editarProduto($conn, $id, $nome, $preco, $situacao, $descricao, $categoria_id){
-    $query = "UPDATE produtos SET nome = '{$nome}',preco = '{$preco}', situacao = {$situacao},descricao = '{$descricao}', categoria_id = {$categoria_id} WHERE id_categoria = {$id}";
+    $query = "UPDATE produtos SET nome = '{$nome}',preco = {$preco}, situacao = {$situacao},descricao = '{$descricao}', categoria_id = {$categoria_id} WHERE id_produto = {$id}";
+    echo $query;
+    exit;
     return mysqli_query($conn, $query);
 }
 
@@ -36,7 +38,7 @@ function pesquisarProduto($conn, $id){
     return mysqli_fetch_assoc($resultado);
 }
 
-// função de pesquisa por ID
+// função de pesquisa do produto vinculado a categoria e impressão do nome em vez do identificador.
 function pesquisarNomeCategoria($conn){
     $produtos = array();
     $query = "SELECT p.*,c.nome AS categoria_nome FROM produtos AS p JOIN categorias AS c ON c.id_categoria=p.categoria_id ORDER BY id_produto";
