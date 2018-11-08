@@ -9,10 +9,10 @@ require_once('modeloProduto.php');
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
 // verifica se o campo situação está vazio antes de persistir na base de dados.
-if(array_key_exists('situacao', $_POST['situacao'])){
-    $situacao = "true";
+if(array_key_exists('situacao', $_POST)){
+    $situacao = "TRUE";
 }else{
-    $situacao = "false";
+    $situacao = "FALSE";
 }
 $descricao = $_POST['descricao'];
 $categoria_id = $_POST['categoria_id'];

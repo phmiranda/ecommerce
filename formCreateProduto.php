@@ -37,11 +37,8 @@ $categorias = indexCategoria($conn);
                     </div>
 
                     <div class="form-group">
-                        <label for="situacao"> Usado </label>
-                        <select class="form-control" name="situacao" required>
-                            <option value="0"> Produto Novo </option>
-                            <option value="1"> Produto Usado </option>
-                        </select>
+                        <label for="situacao"> Situação: </label>
+                        <input class="checkbox" type="checkbox" name="situacao"> Produto Usado ?
                     </div>
 
                     <div class="form-group">
