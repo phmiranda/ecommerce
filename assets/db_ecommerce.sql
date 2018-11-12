@@ -15,13 +15,20 @@ CREATE TABLE categorias(
   nome VARCHAR(30) NOT NULL
 );
 
+/* @situacao*/
+CREATE TABLE situacao(
+  id_situacao INT NOT NULL AUTO_INCREMENT PRIMARY KEY ;
+  nome VARCHAR(30) NOT NULL
+);
+
 /* @produtos */
 CREATE TABLE produtos(
   id_produto INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   nome VARCHAR(100) NOT NULL ,
   preco DECIMAL (10,2) NOT NULL ,
-  situacao BOOLEAN NOT NULL DEFAULT FALSE ,
   descricao LONGTEXT NULL ,
   categoria_id INT NOT NULL,
-  FOREIGN KEY(categoria_id) REFERENCES categorias(id_categoria)
+  situacao_id INT NOT NULL ,
+  FOREIGN KEY(categoria_id) REFERENCES categorias(id_categoria),
+  FOREIGN KEY(situacao_id) REFERENCES situacao(id_situacao),
 );
