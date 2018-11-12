@@ -8,17 +8,12 @@ require_once('modeloProduto.php');
 // comentários.
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
-// verifica se o campo situação está vazio antes de persistir na base de dados.
-if(array_key_exists('situacao', $_POST)){
-    $situacao = "TRUE";
-}else{
-    $situacao = "FALSE";
-}
 $descricao = $_POST['descricao'];
 $categoria_id = $_POST['categoria_id'];
+$situacao_id = $_POST['situacao_id'];
 
 // comentários.
-if(salvarProduto($conn, $nome,$preco,$situacao,$descricao,$categoria_id)){
+if(salvarProduto($conn, $nome,$preco,$descricao,$categoria_id, $situacao_id)){
     echo "<p class='text-success principal'> O produto {$nome} foi cadastrada com sucesso.</p>";
 }else{
     $msg = mysqli_error($conn);

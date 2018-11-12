@@ -24,7 +24,7 @@ $categorias = indexCategoria($conn);
 
             <div class="col-md-6">
                 <div class="input-group h2">
-                    <input id="pesquisarRegistro" class="form-control" type="text" name="data[search]" placeholder="Digite algo para buscar o registro na tabela abaixo.">
+                    <input id="pesquisarRegistro" class="form-control" type="text" name="data[search]" placeholder="Digite um registro para buscar na tabela abaixo!">
                     <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">
                         <span class="glyphicon glyphicon-search"></span>

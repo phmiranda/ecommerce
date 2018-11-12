@@ -24,7 +24,7 @@ $produtos = pesquisarNomeCategoria($conn);
 
             <div class="col-md-6">
                 <div class="input-group h2">
-                    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Digite">
+                    <input name="data[search]" class="form-control" id="search" type="text" placeholder="Digite um registro para buscar na tabela abaixo!">
                     <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">
                         <span class="glyphicon glyphicon-search"></span>
@@ -61,7 +61,7 @@ $produtos = pesquisarNomeCategoria($conn);
                             <td><?php echo $produto['nome']?></td>
                             <td><?php echo $produto['preco']?></td>
                             <td><?php echo $produto['categoria_nome']?></td>
-                            <td><?php echo $produto['situacao']?></td>
+                            <td><?php echo $produto['situacao_id']?></td>
                             <td>
                                 <a class="btn btn-warning btn-xs" href="formEditProduto.php?id=<?php echo $produto['id_produto']?>"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a class="btn btn-danger btn-xs"  href="formRequestDeleteProduto.php?id=<?php echo $produto['id_produto']?>"><span class="glyphicon glyphicon-trash"></a>

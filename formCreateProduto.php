@@ -7,9 +7,11 @@ require_once('configuracao.php');
 
 // comentários.
 require_once('modeloCategoria.php');
+require_once('modelSituacao.php');
 
 // comentários.
 $categorias = indexCategoria($conn);
+$situacoes = indexSituacao($conn);
 ?>
     <div class="container-fluid">
         <div class="row">
@@ -38,7 +40,11 @@ $categorias = indexCategoria($conn);
 
                     <div class="form-group">
                         <label for="situacao"> Situação: </label>
-                        <input class="checkbox" type="checkbox" name="situacao"> Produto Usado ?
+                        <select class="form-control" name="situacao_id" required>
+                            <?php foreach($situacoes as $situacao):?>
+                                <option value="<?php echo $situacao['id_situacao']?>"> <?php echo $situacao['nome']?> </option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
 
                     <div class="form-group">
