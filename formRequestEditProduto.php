@@ -9,7 +9,7 @@ require_once('modeloProduto.php');
 $id = $_POST['id_produto'];
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
-$situacao = $_POST['situacao'];
+$situacao = $_POST['Situacao'];
 $descricao = $_POST['descricao'];
 $categoria_id = $_POST['categoria_id'];
 
