@@ -1,0 +1,6 @@
+<?php
+
+// comentários.
+function verificarSituacaoCategoria(){
+
+}
