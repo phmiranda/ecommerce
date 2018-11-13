@@ -51,7 +51,11 @@ $situacoes = indexSituacao($conn);
                         <label for="descricao"> Descrição: </label>
                         <textarea class="form-control" name="descricao" required></textarea>
                     </div>
-                    <button class="btn btn-success btn-block" type="submit"> Cadastrar </button>
+
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit"> Cadastrar </button>
+                        <button class="btn btn-danger"> Cancelar </button>
+                    </div>
                 </form>
             </div>
         </div>

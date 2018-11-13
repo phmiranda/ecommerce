@@ -9,7 +9,11 @@
                         <label for="nome"> Nome: </label>
                         <input class="form-control" type="text" name="nome" required>
                     </div>
-                    <button class="btn btn-success btn-block" type="submit"> Cadastrar </button>
+
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit"> Cadastrar </button>
+                        <button class="btn btn-danger"> Cancelar </button>
+                    </div>
                 </form>
             </div>
         </div>

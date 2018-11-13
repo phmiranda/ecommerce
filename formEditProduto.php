@@ -65,7 +65,11 @@ if($selecaoCategoria = $situacaoCategoria){
                         <label for="descricao"> Descrição: </label>
                         <textarea class="form-control" name="descricao"><?php echo $produto['descricao']?></textarea>
                     </div>
-                    <button class="btn btn-success btn-block" type="submit"> Alterar </button>
+
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block" type="submit"> Alterar </button>
+                        <button class="btn btn-danger"> Cancelar </button>
+                    </div>
                 </form>
             </div>
         </div>
