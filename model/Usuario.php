@@ -32,4 +32,9 @@ class Usuario {
     public function excluirUsuario(){
 
     }
+
+    // comentários.
+    public function pesquisarUsuario(){
+
+    }
 }

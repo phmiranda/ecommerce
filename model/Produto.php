@@ -33,4 +33,9 @@ class Produto {
     public function excluirProduto(){
 
     }
+
+    // comentários.
+    public function pesquisarProduto(){
+
+    }
 }

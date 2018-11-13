@@ -30,4 +30,9 @@ class Categoria {
     public function excluirCategoria(){
         
     }
+
+    // comentários.
+    public function pesquisarCategoria(){
+
+    }
 }
