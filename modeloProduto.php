@@ -19,7 +19,9 @@ function salvarProduto($conn, $nome, $preco, $descricao, $categoria_id, $situaca
 
 // função de edição de registros.
 function editarProduto($conn, $id, $nome, $preco, $descricao, $categoria_id, $situacao_id){
-    $query = "UPDATE produtos SET nome = '{$nome}',preco = {$preco}, descricao = '{$descricao}', categoria_id = {$categoria_id}, situacao_id = {$situacao_id} WHERE id_produto = {$id}";
+    $query = "UPDATE produtos SET nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', categoria_id = {$categoria_id}, situacao_id = {$situacao_id} WHERE id_produto = {$id}";
+    echo $query;
+    die();
     return mysqli_query($conn, $query);
 }
 

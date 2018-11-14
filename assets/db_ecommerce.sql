@@ -17,7 +17,7 @@ CREATE TABLE categorias(
 
 /* @situacao*/
 CREATE TABLE situacao(
-  id_situacao INT NOT NULL AUTO_INCREMENT PRIMARY KEY ;
+  id_situacao INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   nome VARCHAR(30) NOT NULL
 );
 
@@ -30,5 +30,5 @@ CREATE TABLE produtos(
   categoria_id INT NOT NULL,
   situacao_id INT NOT NULL ,
   FOREIGN KEY(categoria_id) REFERENCES categorias(id_categoria),
-  FOREIGN KEY(situacao_id) REFERENCES situacao(id_situacao),
+  FOREIGN KEY(situacao_id) REFERENCES situacao(id_situacao)
 );

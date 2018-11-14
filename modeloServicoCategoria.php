@@ -1,6 +1,0 @@
-<?php
-
-// comentários.
-function verificarSituacaoCategoria(){
-
-}

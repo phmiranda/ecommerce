@@ -9,12 +9,12 @@ require_once('modeloProduto.php');
 $id = $_POST['id_produto'];
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
-$situacao = $_POST['Situacao'];
 $descricao = $_POST['descricao'];
 $categoria_id = $_POST['categoria_id'];
+$situacao_id = $_POST['situacao_id'];
 
 // comentários.
-if(editarProduto($conn,$id,$nome,$preco,$situacao, $descricao, $categoria_id)){
+if(editarProduto($conn,$id,$nome,$preco, $descricao, $categoria_id, $situacao_id)){
     echo "<p class='text-success principal'> O produto {$nome} foi alterada com sucesso.</p>";
 }else{
     $msg = mysqli_error($conn);

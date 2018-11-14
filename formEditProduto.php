@@ -17,14 +17,6 @@ $produto = pesquisarProduto($conn, $id);
 // comentários.
 $categorias = indexCategoria($conn);
 $situacoes = indexSituacao($conn);
-
-// comentários.
-$situacaoCategoria = $produto['situacao_id'] == $categoria['id_categoria'];
-if($selecaoCategoria = $situacaoCategoria){
- echo $selecaoCategoria = "selected='selected'";
-}else{
-    echo $selecaoCategoria = "";
-}
 ?>
     <div class="container-fluid">
         <div class="row">
@@ -47,14 +39,19 @@ if($selecaoCategoria = $situacaoCategoria){
                         <label for="categoria_id"> Categoria: </label>
                         <select class="form-control" name="categoria_id">
                             <?php foreach($categorias as $categoria):?>
-                                <option value="<?php echo $categoria['categoria_id']?>"> <?php echo $categoria['nome']?> </option>
+                                <?php
+                                    // verifica e seleciona a categoria cadastrada do produto.
+                                    $situacaoCategoria = $produto['categoria_id'] == $categoria['id_categoria'];
+                                    $selecaoCategoria = $situacaoCategoria ? "selected='selected'" : "";
+                                ?>
+                                <option value="<?php echo $categoria['categoria_id']?>" <?php echo $selecaoCategoria?> > <?php echo $categoria['nome']?> </option>
                             <?php endforeach; ?>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="situacao"> Usado </label>
-                        <select class="form-control" name="situacao">
+                        <select class="form-control" name="situacao_id">
                             <?php foreach($situacoes as $situacao) :?>
                                 <option value="<?php echo $situacao['id_situacao']?>"> <?php echo $situacao['nome']?> </option>
                             <?php endforeach; ?>
@@ -67,7 +64,7 @@ if($selecaoCategoria = $situacaoCategoria){
                     </div>
 
                     <div class="form-group">
-                        <button class="btn btn-success btn-block" type="submit"> Alterar </button>
+                        <button class="btn btn-success" type="submit"> Alterar </button>
                         <button class="btn btn-danger"> Cancelar </button>
                     </div>
                 </form>
