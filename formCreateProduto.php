@@ -7,7 +7,7 @@ require_once('configuracao.php');
 
 // comentários.
 require_once('modeloCategoria.php');
-require_once('modelSituacao.php');
+require_once('modeloSituacao.php');
 
 // comentários.
 $categorias = indexCategoria($conn);

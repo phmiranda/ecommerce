@@ -8,7 +8,7 @@ require_once('configuracao.php');
 // comentários.
 require_once('modeloCategoria.php');
 require_once('modeloProduto.php');
-require_once('modelSituacao.php');
+require_once('modeloSituacao.php');
 
 // comentários.
 $id = $_GET['id'];
@@ -39,12 +39,7 @@ $situacoes = indexSituacao($conn);
                         <label for="categoria_id"> Categoria: </label>
                         <select class="form-control" name="categoria_id">
                             <?php foreach($categorias as $categoria):?>
-                                <?php
-                                    // verifica e seleciona a categoria cadastrada do produto.
-                                    $situacaoCategoria = $produto['categoria_id'] == $categoria['id_categoria'];
-                                    $selecaoCategoria = $situacaoCategoria ? "selected='selected'" : "";
-                                ?>
-                                <option value="<?php echo $categoria['categoria_id']?>" <?php echo $selecaoCategoria?> > <?php echo $categoria['nome']?> </option>
+                                <option value="<?php echo $categoria['categoria_id']?>" > <?php echo $categoria['nome']?> </option>
                             <?php endforeach; ?>
                         </select>
                     </div>
