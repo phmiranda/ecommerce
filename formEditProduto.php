@@ -1,20 +1,20 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
 
-// comentários.
+/* comentários */
 require_once('configuracao.php');
 
-// comentários.
+/* comentários */
 require_once('modeloCategoria.php');
-require_once('modeloProduto.php');
 require_once('modeloSituacao.php');
+require_once('modeloProduto.php');
 
-// comentários.
+/* comentários */
 $id = $_GET['id'];
 $produto = pesquisarProduto($conn, $id);
 
-// comentários.
+/* comentários */
 $categorias = indexCategoria($conn);
 $situacoes = indexSituacao($conn);
 ?>
@@ -38,8 +38,12 @@ $situacoes = indexSituacao($conn);
                     <div class="form-group">
                         <label for="categoria_id"> Categoria: </label>
                         <select class="form-control" name="categoria_id">
-                            <?php foreach($categorias as $categoria):?>
-                                <option value="<?php echo $categoria['categoria_id']?>" > <?php echo $categoria['nome']?> </option>
+                            <?php
+                            foreach($categorias as $categoria):
+                                $categoriaSelecionada = $produto['categoria_id'] == $categoria['id_categoria'];
+                                $selecao = $categoriaSelecionada ? "selected='selected'" : "";
+                             ?>
+                                <option value="<?php echo $categoria['categoria_id']?>" <?= $selecao?> > <?php echo $categoria['nome']?> </option>
                             <?php endforeach; ?>
                         </select>
                     </div>

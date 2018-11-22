@@ -1,6 +1,6 @@
 <?php
 
-// função de listagem de registros.
+/* comentários */
 function indexCategoria($conn){
     $categorias = array();
     $query = "SELECT * FROM categorias";
@@ -11,25 +11,25 @@ function indexCategoria($conn){
     return $categorias;
 }
 
-// função de inserção de registros.
+/* comentários */
 function salvarCategoria($conn, $nome){
     $query = "INSERT INTO categorias(nome) VALUES('{$nome}')";
     return mysqli_query($conn, $query);
 }
 
-// função de edição de registros.
+/* comentários */
 function editarCategoria($conn, $id, $nome){
     $query = "UPDATE categorias SET nome = '{$nome}' WHERE id_categoria = {$id}";
     return mysqli_query($conn, $query);
 }
 
-// função de exclusão de registros.
+/* comentários */
 function excluirCategoria($conn, $id){
     $query = "DELETE FROM categorias WHERE id_categoria = {$id}";
     return mysqli_query($conn,$query);
 }
 
-// função de listagem de um registro específico.
+/* comentários */
 function pesquisarCategoria($conn, $id){
     $query = "SELECT * FROM categorias WHERE id_categoria={$id}";
     $resultado = mysqli_query($conn, $query);

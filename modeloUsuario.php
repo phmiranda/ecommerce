@@ -1,6 +1,6 @@
 <?php
 
-// função de listagem de registros.
+/* comentários */
 function indexUsuario($conn){
     $usuarios = array();
     $query = "SELECT * FROM usuarios";
@@ -11,24 +11,25 @@ function indexUsuario($conn){
     return $usuarios;
 }
 
-// função de inserção de registros.
+/* comentários */
 function salvarUsuario($conn, $nome, $email, $senha){
     $query = "INSERT INTO usuarios(nome, email, senha) VALUES('{$nome}','{$email}','{$senha}')";
     return mysqli_query($conn, $query);
 }
 
-// função de edição de registros.
+/* comentários */
 function editarUsuario(){
 
 }
 
-// função de exclusão de registros.
+/* comentários */
 function excluirUsuario($conn, $id){
     $query = "DELETE FROM usuarios WHERE id_usuario = {$id}";
     return mysqli_query($conn, $query);
 }
 
-// função de listagem de um registro específico.
-function pesquisarUsuario(){
-
+/* comentários */
+function pesquisarUsuario($conn, $id){
+    $query = "SELECT * FROM usuarios WHERE id_usuario = {$id}";
+    return mysqli_query($conn, $query);
 }

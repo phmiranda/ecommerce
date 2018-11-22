@@ -1,11 +1,11 @@
 <?php
 
-// variáveis de conexão com a base de dados
+/* comentários */
 $server = 'localhost';
 $database = 'db_ecommerce';
 $username = 'username';
 $password = 'password';
 
-// script de conexão com o banco de dados.
+/* comentários */
 $conn = mysqli_connect($server,$username,$password, $database);
 return $conn;

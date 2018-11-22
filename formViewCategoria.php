@@ -1,19 +1,19 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
 
-// comentários.
+/* comentários */
 require_once('configuracao.php');
 
-// comentários.
+/* comentários */
 require_once('modeloCategoria.php');
 
-// comentários.
+/* comentários */
 if(array_key_exists("removido", $_GET) && $_GET["removido"]=="true"){
     echo "<p class='text-center text-info'> A categoria foi removido com sucesso. </p>";
 }
 
-// comentários.
+/* comentários */
 $categorias = indexCategoria($conn);
 ?>
      <div class="container">

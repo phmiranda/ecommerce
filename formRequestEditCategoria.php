@@ -1,15 +1,16 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
-// comentários.
+
+/* comentários */
 require_once('configuracao.php');
 require_once('modeloCategoria.php');
 
-// comentários.
+/* comentários */
 $id = $_POST['id_categoria'];
 $nome = $_POST['nome'];
 
-// comentários.
+/* comentários */
 if(editarCategoria($conn,$id,$nome) && $nome != NULL){
     echo "<p class='text-success principal'> A categoria {$nome} foi alterada com sucesso.</p>";
 }else{
@@ -17,5 +18,5 @@ if(editarCategoria($conn,$id,$nome) && $nome != NULL){
     echo "<p class='text-danger principal'> A categoria {$nome} não foi alterada com sucesso. Favor verificar:{$msg}</p>";
 }
 
-// comentários.
+/* comentários */
 require_once('helperRodape.php');

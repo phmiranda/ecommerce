@@ -1,14 +1,14 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
 
-// comentários.
+/* comentários */
 require_once('configuracao.php');
 
-// comentários.
+/* comentários */
 require_once('modeloCategoria.php');
 
-// comentários.
+/* comentários */
 $id = $_GET['id'];
 excluirCategoria($conn, $id);
 header('Location: formViewCategoria.php?removido=true');

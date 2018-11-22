@@ -1,14 +1,14 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
 
-// comentários.
+/* comentários */
 require_once('configuracao.php');
 
-// comentários.
+/* comentários */
 require_once('modeloProduto.php');
 
-// comentários.
+/* comentários */
 $id = $_GET['id'];
 excluirProduto($conn, $id);
 header('Location: formViewProduto.php?removido=true');

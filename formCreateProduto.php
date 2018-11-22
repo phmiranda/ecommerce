@@ -1,15 +1,15 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
 
-// comentários.
+/* comentários */
 require_once('configuracao.php');
 
-// comentários.
+/* comentários */
 require_once('modeloCategoria.php');
 require_once('modeloSituacao.php');
 
-// comentários.
+/* comentários */
 $categorias = indexCategoria($conn);
 $situacoes = indexSituacao($conn);
 ?>

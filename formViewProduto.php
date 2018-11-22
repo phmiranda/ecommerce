@@ -1,19 +1,19 @@
 <?php
-// comentários.
+/* comentários */
 require_once('helperCabecalho.php');
 
-// comentários.
+/* comentários */
 require_once('configuracao.php');
 
-// comentários.
+/* comentários */
 require_once('modeloProduto.php');
 
-// comentários.
+/* comentários */
 if(array_key_exists("removido", $_GET) && $_GET["removido"]=="true"){
     echo "<p class='text-center text-info'> O Produto foi removido com sucesso. </p>";
 }
 
-// comentários.
+/* comentários */
 $produtos = pesquisarNomeCategoria($conn);
 ?>
     <div class="container">

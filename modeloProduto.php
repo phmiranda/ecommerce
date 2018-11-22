@@ -1,6 +1,6 @@
 <?php
 
-// função de listagem de registros.
+/* comentários */
 function indexProduto($conn){
     $produtos = array();
     $query = "SELECT * FROM produtos";
@@ -11,32 +11,32 @@ function indexProduto($conn){
     return $produtos;
 }
 
-// função de inserção de registros.
+/* comentários */
 function salvarProduto($conn, $nome, $preco, $descricao, $categoria_id, $situacao_id){
     $query = "INSERT INTO produtos(nome, preco, descricao, categoria_id, situacao_id) VALUES('$nome', {$preco}, '{$descricao}', {$categoria_id}, {$situacao_id})";
     return mysqli_query($conn, $query);
 }
 
-// função de edição de registros.
+/* comentários */
 function editarProduto($conn, $id, $nome, $preco, $descricao, $categoria_id, $situacao_id){
-    $query = "UPDATE produtos SET nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', categoria_id = {$categoria_id}, situacao_id = {$situacao_id} WHERE id_produto = {$id}";
+    $query = "UPDATE produtos SET nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', categoria_id = {$categoria_id}, situacao_id = {$situacao_id} WHERE id_produto = '{$id}' ";
     return mysqli_query($conn, $query);
 }
 
-// função de exclusão de registros.
+/* comentários */
 function excluirProduto($conn, $id){
     $query = "DELETE FROM produtos WHERE id_produto = {$id}";
     return mysqli_query($conn,$query);
 }
 
-// função de listagem de um registro específico.
+/* comentários */
 function pesquisarProduto($conn, $id){
     $query = "SELECT * FROM produtos WHERE id_produto = {$id}";
     $resultado = mysqli_query($conn, $query);
     return mysqli_fetch_assoc($resultado);
 }
 
-// função de pesquisa do produto vinculado a categoria e impressão do nome em vez do identificador.
+/* comentários */
 function pesquisarNomeCategoria($conn){
     $produtos = array();
     $query = "SELECT p.*,c.nome AS categoria_nome FROM produtos AS p JOIN categorias AS c ON c.id_categoria=p.categoria_id ORDER BY id_produto";
