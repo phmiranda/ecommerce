@@ -38,12 +38,13 @@ $situacoes = indexSituacao($conn);
                     <div class="form-group">
                         <label for="categoria_id"> Categoria: </label>
                         <select class="form-control" name="categoria_id">
-                            <?php
-                            foreach($categorias as $categoria):
+                            <?php foreach($categorias as $categoria): ?>
+                                <?php
+                                /* comentários */
                                 $categoriaSelecionada = $produto['categoria_id'] == $categoria['id_categoria'];
-                                $selecao = $categoriaSelecionada ? "selected='selected'" : "";
-                             ?>
-                                <option value="<?php echo $categoria['categoria_id']?>" <?= $selecao?> > <?php echo $categoria['nome']?> </option>
+                                $selecaoCategoria = $categoriaSelecionada ? "selected = 'selected' " : "";
+                                ?>
+                                <option value="<?php echo $categoria['categoria_id']?>" <?= $selecaoCategoria?> > <?php echo $categoria['nome']?> </option>
                             <?php endforeach; ?>
                         </select>
                     </div>
@@ -52,7 +53,11 @@ $situacoes = indexSituacao($conn);
                         <label for="situacao"> Usado </label>
                         <select class="form-control" name="situacao_id">
                             <?php foreach($situacoes as $situacao) :?>
-                                <option value="<?php echo $situacao['id_situacao']?>"> <?php echo $situacao['nome']?> </option>
+                                <?php
+                                $situacaoSelecionada = $produto['situacao_id'] == $situacao['id_situacao'];
+                                $selecaoSituacao = $situacaoSelecionada ? "selected = 'selected' " : "";
+                                ?>
+                                <option value="<?php echo $situacao['id_situacao']?>" <?= $selecaoSituacao?> > <?php echo $situacao['nome']?> </option>
                             <?php endforeach; ?>
                         </select>
                     </div>
