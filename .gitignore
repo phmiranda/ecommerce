@@ -2,15 +2,19 @@
 .idea/
 nbproject/
 .vscode/
+*.iml
 
 # configurações do projeto
 config/config.ini
-database/Database.php
 configuracao.php
+
+# templates gerados automaticamente por hospedagens compartilhadas
 default.php
 
-# instalação de dependências
+# arquivos de configuração das dependências do projeto
 composer.lock
 package-lock.json
+
+# diretórios de instalação das dependências
 node_modules/
 vendor/
