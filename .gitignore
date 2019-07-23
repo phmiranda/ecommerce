@@ -9,7 +9,7 @@ config/config.ini
 configuracao.php
 
 # templates gerados automaticamente por hospedagens compartilhadas
-default.php
+public/default.php
 
 # arquivos de configuração das dependências do projeto
 composer.lock

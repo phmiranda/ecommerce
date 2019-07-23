@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> SGCE ™ </title>
-    <link rel="icon" href="public/favicon.png">
+    <link rel="icon" href="public/img/favicon.png">
     <link rel="stylesheet" href="public/css/bootstrap.css">
     <link rel="stylesheet" href="public/css/assets.css">
 </head>
