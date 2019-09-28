@@ -1,26 +1,13 @@
 {
-  "name":"phmiranda/ecommerce",
-  "version": "1.0.0",
-  "license": "MIT",
-  "type": "sistema",
-  "description": "sistema de administração comercial desenvolvido durante o curso de PHP da alura.",
-  "authors": [
-    {
-      "name": "Pedro Henrique Marques Miranda",
-      "email": "pehhagah.1607@gmail.com",
-      "homepage": "https://phmiranda.com.br",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "almasaeed2010/adminlte": "~2.4",
-    "components/jquery": "^3.3",
-    "twbs/bootstrap": "3.3.7",
-    "phpmailer/phpmailer": "^6.0",
-    "twig/twig": "^2.5"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "7",
-    "codeception/codeception": "^2.5"
-  }
+    "name": "phmiranda/ecommerce",
+    "description": "e-commerce desenvolvido durante o aprendizado da linguagem de programação PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Henrique",
+            "email": "pehhagah.1607@gmail.com"
+        }
+    ],
+    "require": {}
 }

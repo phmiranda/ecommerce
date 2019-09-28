@@ -1,7 +1,33 @@
 {
-    "dependencies": {
-        "admin-lte": "^2.4.8",
-        "bootstrap": "^3.3.7",
-        "jquery": "^3.3.1"
-    }
+  "dependencies": {
+    "admin-lte": "^2.4.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1"
+  },
+  "name": "ecommerce",
+  "description": "## Introdução",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phmiranda/ecommerce.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "alura",
+    "php",
+    "desenvolvimento",
+    "web",
+    "web"
+  ],
+  "author": "phmiranda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phmiranda/ecommerce/issues"
+  },
+  "homepage": "https://github.com/phmiranda/ecommerce#readme"
 }
