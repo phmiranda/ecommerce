@@ -1,20 +1,21 @@
 # ferramentas de desenvolvimento
 .idea/
-nbproject/
 .vscode/
+
+# comentário
 *.iml
 
-# configurações do projeto
-config/config.ini
+# comentário
+config.ini
 configuracao.php
 
-# templates gerados automaticamente por hospedagens compartilhadas
+# comentário
 public/default.php
 
-# arquivos de configuração das dependências do projeto
+# comentário
 composer.lock
 package-lock.json
 
-# diretórios de instalação das dependências
+# comentário
 node_modules/
 vendor/

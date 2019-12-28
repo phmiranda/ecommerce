@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-# comentários
+echo "Iniciando automatização de SCRIPTS!"
