@@ -9,5 +9,9 @@
             "email": "pehhagah.1607@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpunit/phpunit": "^8"
+    },
+    "require-dev": {
+    }
 }
