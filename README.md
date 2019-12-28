@@ -1,7 +1,1 @@
-# Sistema de Comércio Eletrônico da Alura
-
-## Introdução
-
-## Configuração
-
-## Releases
+# API de Comunicação de Comércio Eletrônico
