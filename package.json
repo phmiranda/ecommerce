@@ -1,13 +1,9 @@
 {
-  "dependencies": {
-    "admin-lte": "^2.4.8",
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.3.1"
-  },
   "name": "ecommerce",
-  "description": "## Introdução",
   "version": "1.0.0",
+  "description": "ecommerce desenvolvido durante a carreira de desenvolvedor PHP",
   "main": "index.js",
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,14 +13,14 @@
     "url": "git+https://github.com/phmiranda/ecommerce.git"
   },
   "keywords": [
-    "ecommerce",
     "alura",
-    "php",
-    "desenvolvimento",
+    "ecommerce",
+    "carreira",
+    "desenvolvedor",
     "web",
-    "web"
+    "php"
   ],
-  "author": "phmiranda",
+  "author": "Pedro Henrique",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/phmiranda/ecommerce/issues"

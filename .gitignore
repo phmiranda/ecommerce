@@ -6,7 +6,7 @@
 *.iml
 
 # comentário
-config.ini
+config/database/config.ini
 configuracao.php
 
 # comentário

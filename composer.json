@@ -1,17 +1,13 @@
 {
     "name": "phmiranda/ecommerce",
-    "description": "e-commerce desenvolvido durante o aprendizado da linguagem de programação PHP",
+    "description": "ecommerce desenvolvido durante a carreira de desenvolvedor PHP",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "Pedro Henrique",
+            "name": "phmiranda",
             "email": "pehhagah.1607@gmail.com"
         }
     ],
-    "require": {
-        "phpunit/phpunit": "^8"
-    },
-    "require-dev": {
-    }
+    "require": {}
 }
