@@ -1,20 +1,23 @@
-# ferramentas de desenvolvimento
+# ide's configurations for project.
 .idea/
 .vscode/
 
-# comentário
+# ide's file configuration for project
 *.iml
 
-# comentário
+# database configuration file for production.
 database/config.ini
 
-# comentário
+# file generate in hosted server.
 public/default.php
 
-# comentário
+# comentário.
+storage/
+
+# dependencies files for environment.
 composer.lock
 package-lock.json
 
-# comentário
+# dependencies directory for environment.
 node_modules/
 vendor/

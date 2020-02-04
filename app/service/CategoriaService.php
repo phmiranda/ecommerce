@@ -1,7 +1,8 @@
 <?php
 
 
-class CategoriaService
-{
+class CategoriaService {
+    public function validateNameOfCategory() {
 
+    }
 }

@@ -1,7 +1,8 @@
 <?php
 
 
-class CategoriaController
-{
+class CategoriaController {
+    public function index() {
 
+    }
 }
