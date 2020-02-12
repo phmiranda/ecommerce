@@ -1,5 +1,8 @@
-version: 3
+version: "3"
 services:
+  ecommerce:
+    dockerfile_path: ./ecommerce.dockerfile
+    container_name: ecommerce-alura
 networks:
 
 volumes:
