@@ -1,0 +1,24 @@
+{
+    "name": "phmiranda/ecommerce",
+    "description": "API de cadastro de produtos e carrinho de compras básico para estudo do PHP.",
+    "type": "project",
+    "require": {
+        "doctrine/orm": "^3.6"
+    },
+    "require-dev": {
+        "doctrine/orm": "^3.6",
+        "phpunit/phpunit": "^13.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phmiranda\\Ecommerce\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pedro",
+            "email": "pehhagah.1607@gmail.com"
+        }
+    ]
+}
